@@ -4,36 +4,38 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour {
 
-    private SpriteRenderer mySpriteRenderer;
+    private Rigidbody2D myRigidBody;
+    private Vector2 deltaPosition;
+    private Animator animator;
     public float moveSpeed = 5f;
     public bool isReversed = false;
-    public BoxCollider2D collider;
+
     // Start is called before the first frame update
     void Start() {
+        myRigidBody = GetComponent<Rigidbody2D>();
         mySpriteRenderer = GetComponent<SpriteRenderer>();
+        animator = GetComponent<Animator>();
     }
 
     // Update is called once per frame
     void Update() {
-        float movement = Input.GetAxis("Horizontal");
-
-        ContactPoint2D[] contacts = new ContactPoint2D[1];
-        int numContacts = collider.GetContacts(contacts);
-        if (numContacts > 0) {
-            if (contacts[0].normal.x < 0 && movement > 0) {
-                movement = 0;
-            } else if (contacts[0].normal.x > 0 && movement < 0) {
-                movement = 0;
-            }
-        }
-
-        Vector3 movementVector = new Vector3(movement, 0f);
-        transform.position += movementVector * Time.deltaTime * moveSpeed;
-
-        if ((isReversed == (movement > 0)) && (movement != 0)) {
-            mySpriteRenderer.flipX = !mySpriteRenderer.flipX;
-            isReversed = !isReversed;
-        }
-
+        deltaPosition = Vector2.zero;
+        deltaPosition.x = Input.GetAxisRaw("Horizontal");
     }
+
+    private void FixedUpdate() {
+        if(deltaPosition != Vector2.zero) {
+            MoveCharacter();
+            animator.SetFloat("moveX", deltaPosition.x);
+            animator.SetBool("isMoving", true);
+        } else {
+            animator.SetBool("isMoving", false);
+        }
+    }
+
+    void MoveCharacter() {
+        myRigidBody.MovePosition(myRigidBody.position + (deltaPosition * moveSpeed * Time.fixedDeltaTime));
+    }
+
+
 }
