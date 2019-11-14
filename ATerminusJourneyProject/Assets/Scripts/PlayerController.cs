@@ -13,7 +13,6 @@ public class PlayerController : MonoBehaviour {
     // Start is called before the first frame update
     void Start() {
         myRigidBody = GetComponent<Rigidbody2D>();
-        mySpriteRenderer = GetComponent<SpriteRenderer>();
         animator = GetComponent<Animator>();
     }
 
