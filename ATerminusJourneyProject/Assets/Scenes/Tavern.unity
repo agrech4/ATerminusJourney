@@ -360,6 +360,11 @@ PrefabInstance:
       propertyPath: sceneToLoad
       value: TownHub
       objectReference: {fileID: 0}
+    - target: {fileID: 3953207400835481345, guid: e8197e20d56ec724684037223c70cd5a,
+        type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 85337534}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e8197e20d56ec724684037223c70cd5a, type: 3}
 --- !u!1 &1271725632 stripped
@@ -500,6 +505,11 @@ PrefabInstance:
       propertyPath: transitions.Array.data[0]
       value: 
       objectReference: {fileID: 1271725632}
+    - target: {fileID: 7648671821672620153, guid: acb2789942c50734093ac097187c2c68,
+        type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 85337534}
     - target: {fileID: 7648671820825332208, guid: acb2789942c50734093ac097187c2c68,
         type: 3}
       propertyPath: m_IsActive

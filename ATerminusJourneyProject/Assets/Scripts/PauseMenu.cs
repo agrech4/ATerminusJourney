@@ -7,7 +7,7 @@ public class PauseMenu : MonoBehaviour {
 
     public GameObject pauseMenu;
     public Button defaultButton;
-    public PlayerController playerController;
+    public PlayerController player;
     public List<GameObject> transitions;
     public bool paused;
 
@@ -29,10 +29,7 @@ public class PauseMenu : MonoBehaviour {
             defaultButton.FindSelectableOnDown().Select();
             defaultButton.Select();
         }
-        playerController.enabled = paused;
-        foreach (GameObject transition in transitions) {
-            transition.SetActive(paused);
-        }
+        player.playerState = paused? PlayerState.moving : PlayerState.inMenu;
         paused = !paused;
     }
 }

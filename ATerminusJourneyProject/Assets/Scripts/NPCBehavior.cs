@@ -7,6 +7,7 @@ public class NPCBehavior : MonoBehaviour {
 
     public bool dialogueActive;
     public bool playerInRange;
+    public PlayerController player;
     public string dialogue;
     public GameObject dialogueBox;
     public TextMeshProUGUI dialogueText;
@@ -18,7 +19,8 @@ public class NPCBehavior : MonoBehaviour {
 
     // Update is called once per frame
     void Update() {
-        if (playerInRange && Input.GetButtonDown("Interact")) {
+        if (playerInRange && Input.GetButtonDown("Interact") 
+            && player.playerState != PlayerState.inMenu) {
             ToggleDialogue();
         }
     }

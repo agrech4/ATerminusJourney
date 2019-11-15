@@ -7,6 +7,7 @@ public class SceneTransition : MonoBehaviour {
 
     public string sceneToLoad;
     private bool playerInRange;
+    public PlayerController player;
 
     // Start is called before the first frame update
     void Start() {
@@ -15,7 +16,8 @@ public class SceneTransition : MonoBehaviour {
 
     // Update is called once per frame
     void Update() {
-        if (playerInRange && Input.GetButtonDown("Interact")) {
+        if (playerInRange && Input.GetButtonDown("Interact") 
+            && player.playerState != PlayerState.inMenu) {
             LoadScene();
         }
     }
