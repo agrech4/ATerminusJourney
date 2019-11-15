@@ -25,20 +25,15 @@ public class CameraController : MonoBehaviour {
         if (transform.position != targetPosition) {
             transform.position = targetPosition;
         }
-
-
     }
 
     // Update is called once per frame
     void FixedUpdate() {
-
         Vector3 targetPosition = new Vector3(target.position.x, transform.position.y, transform.position.z);
         targetPosition.x = Mathf.Clamp(targetPosition.x, leftBound, rightBound);
 
-        if(transform.position != targetPosition) {
+        if (transform.position != targetPosition) {
             transform.position = Vector3.Lerp(transform.position, targetPosition, smoothing);
         }
-
-            
     }
 }

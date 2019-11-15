@@ -24,22 +24,15 @@ public class PauseMenu : MonoBehaviour {
     }
 
     public void TogglePauseMenu() {
+        pauseMenu.SetActive(!paused);
         if (!paused) {
-            pauseMenu.SetActive(true);
             defaultButton.FindSelectableOnDown().Select();
             defaultButton.Select();
-            playerController.enabled = false;
-            foreach (GameObject transition in transitions) {
-                transition.SetActive(false);
-            }
-            paused = true;
-        } else {
-            pauseMenu.SetActive(false);
-            playerController.enabled = true;
-            foreach (GameObject transition in transitions) {
-                transition.SetActive(true);
-            }
-            paused = false;
         }
+        playerController.enabled = paused;
+        foreach (GameObject transition in transitions) {
+            transition.SetActive(paused);
+        }
+        paused = !paused;
     }
 }

@@ -1,12 +1,15 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
+using TMPro;
 
-public class SceneTransition : MonoBehaviour {
+public class NPCBehavior : MonoBehaviour {
 
-    public string sceneToLoad;
-    private bool playerInRange;
+    public bool dialogueActive;
+    public bool playerInRange;
+    public string dialogue;
+    public GameObject dialogueBox;
+    public TextMeshProUGUI dialogueText;
 
     // Start is called before the first frame update
     void Start() {
@@ -16,18 +19,17 @@ public class SceneTransition : MonoBehaviour {
     // Update is called once per frame
     void Update() {
         if (playerInRange && Input.GetButtonDown("Interact")) {
-            LoadScene();
+            ToggleDialogue();
         }
     }
 
-    public void SetScene(string scene) {
-        sceneToLoad = scene;
+    public void ToggleDialogue() {
+        if (dialogue.Length > 0) {
+            dialogueBox.SetActive(!dialogueActive);
+            if (!dialogueActive) dialogueText.SetText(dialogue);
+            dialogueActive = !dialogueActive;
+        }
     }
-
-    private void LoadScene() {
-        SceneManager.LoadScene(sceneToLoad);
-    }
-
 
     public void OnTriggerEnter2D(Collider2D other) {
         if (other.CompareTag("Player")) {
@@ -38,6 +40,7 @@ public class SceneTransition : MonoBehaviour {
     public void OnTriggerExit2D(Collider2D other) {
         if (other.CompareTag("Player")) {
             playerInRange = false;
+            if (dialogueActive) ToggleDialogue();
         }
     }
 }

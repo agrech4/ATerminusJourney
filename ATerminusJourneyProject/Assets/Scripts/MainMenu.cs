@@ -10,9 +10,11 @@ public class MainMenu : MonoBehaviour {
     public string sceneToLoad;
 
     private void Start() {
+
     }
 
     public void Update() {
+
     }
 
     public void SetChar(int i) {
@@ -25,7 +27,6 @@ public class MainMenu : MonoBehaviour {
                 Debug.Log("Druid");
                 break;
         }
-
     }
 
     public void SetScene(string scene) {
@@ -37,7 +38,7 @@ public class MainMenu : MonoBehaviour {
         SceneManager.LoadScene(sceneToLoad);
     }
 
-    public void QuitGame () {
+    public void QuitGame() {
         Debug.Log("Sayonara bitches");
         Application.Quit();
     }
