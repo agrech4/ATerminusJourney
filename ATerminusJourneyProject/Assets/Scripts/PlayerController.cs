@@ -21,7 +21,7 @@ public class PlayerController : MonoBehaviour {
         deltaPosition = Vector2.zero;
         deltaPosition.x = Input.GetAxisRaw("Horizontal");
     }
-
+    
     private void FixedUpdate() {
         if(deltaPosition != Vector2.zero) {
             MoveCharacter();
