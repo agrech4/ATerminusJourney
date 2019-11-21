@@ -12,6 +12,7 @@ public class PlayerController : MonoBehaviour {
     private Rigidbody2D myRigidBody;
     private Vector2 deltaPosition;
     private Animator animator;
+    public PlayerData playerData;
     public PlayerState playerState;
     public float moveSpeed = 5f;
     public bool isReversed = false;
@@ -21,6 +22,7 @@ public class PlayerController : MonoBehaviour {
         playerState = PlayerState.moving;
         myRigidBody = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
+        animator.runtimeAnimatorController = playerData.animatorController;
         animator.SetFloat("moveX", 1f);
     }
 
