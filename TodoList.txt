@@ -1,5 +1,4 @@
 Art Devepment and Design TO-DO:
-Dialogue Box
 Animations
 Back button
 HUB World Improvements
