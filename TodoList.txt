@@ -1,4 +1,10 @@
-TODO:
+Art Devepment and Design TO-DO:
 Dialogue Box
 Animations
 Back button
+HUB World Improvements
+Develop a Narative
+
+Head of Programming TO-DO:
+Characters persist through character select
+Return to Main Menu Button
