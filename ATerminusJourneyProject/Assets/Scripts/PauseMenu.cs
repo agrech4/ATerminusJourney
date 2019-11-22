@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class PauseMenu : MonoBehaviour {
 
@@ -31,5 +32,9 @@ public class PauseMenu : MonoBehaviour {
         }
         player.playerState = paused? PlayerState.moving : PlayerState.inMenu;
         paused = !paused;
+    }
+
+    public void ReturnToMainMenu() {
+        SceneManager.LoadScene("MainMenu");
     }
 }

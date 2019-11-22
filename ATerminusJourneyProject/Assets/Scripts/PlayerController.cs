@@ -16,6 +16,7 @@ public class PlayerController : MonoBehaviour {
     public PlayerState playerState;
     public float moveSpeed = 5f;
     public bool isReversed = false;
+    public int timeToIdle = 2;
 
     // Start is called before the first frame update
     void Start() {
@@ -37,8 +38,9 @@ public class PlayerController : MonoBehaviour {
             MoveCharacter();
             animator.SetFloat("moveX", deltaPosition.x);
             animator.SetBool("isMoving", true);
-        } else {
+        } else if (animator.GetBool("isMoving")){
             animator.SetBool("isMoving", false);
+            StartCoroutine(WaitForIdle());
         }
     }
 
@@ -47,5 +49,12 @@ public class PlayerController : MonoBehaviour {
             + (deltaPosition * moveSpeed * Time.fixedDeltaTime));
     }
 
+
+    private IEnumerator WaitForIdle() {
+        yield return new WaitForSeconds(timeToIdle);
+        animator.SetBool("idle", true);
+        yield return new WaitForSeconds(.1f);
+        animator.SetBool("idle", false);
+    }
 
 }

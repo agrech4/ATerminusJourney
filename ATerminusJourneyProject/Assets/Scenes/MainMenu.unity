@@ -270,10 +270,10 @@ RectTransform:
   m_Father: {fileID: 1707994599}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0}
-  m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: -200, y: 200}
-  m_SizeDelta: {x: 300, y: 50}
+  m_AnchorMin: {x: 0, y: 0.5}
+  m_AnchorMax: {x: 0, y: 0.5}
+  m_AnchoredPosition: {x: 175, y: 0}
+  m_SizeDelta: {x: 250, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &15888586
 MonoBehaviour:
@@ -1247,12 +1247,6 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
-    - target: {fileID: 8910034827059819553, guid: dba211a1053f7e64a96dc2dbad91d9a7,
-        type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: 6d1e5797c78fe744b9ea382092a24624,
-        type: 3}
     - target: {fileID: 8910034826537034686, guid: dba211a1053f7e64a96dc2dbad91d9a7,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
@@ -1349,6 +1343,12 @@ PrefabInstance:
       propertyPath: m_Colors.m_SelectedColor.r
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 8910034827059819553, guid: dba211a1053f7e64a96dc2dbad91d9a7,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 6d1e5797c78fe744b9ea382092a24624,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dba211a1053f7e64a96dc2dbad91d9a7, type: 3}
 --- !u!1001 &741379163
@@ -1468,12 +1468,6 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
-    - target: {fileID: 8910034827059819553, guid: dba211a1053f7e64a96dc2dbad91d9a7,
-        type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: f5ec8c9e716b34448be81af52a3a60b7,
-        type: 3}
     - target: {fileID: 8910034826537034686, guid: dba211a1053f7e64a96dc2dbad91d9a7,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
@@ -1540,6 +1534,12 @@ PrefabInstance:
       propertyPath: m_Colors.m_SelectedColor.b
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 8910034827059819553, guid: dba211a1053f7e64a96dc2dbad91d9a7,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: f5ec8c9e716b34448be81af52a3a60b7,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dba211a1053f7e64a96dc2dbad91d9a7, type: 3}
 --- !u!1 &781500912
@@ -1681,10 +1681,10 @@ RectTransform:
   m_Father: {fileID: 1707994599}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0}
-  m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: -200, y: 100}
-  m_SizeDelta: {x: 300, y: 50}
+  m_AnchorMin: {x: 0, y: 0.19678542}
+  m_AnchorMax: {x: 0, y: 0.19678542}
+  m_AnchoredPosition: {x: 150, y: 0}
+  m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &943621243
 MonoBehaviour:
@@ -2186,10 +2186,10 @@ RectTransform:
   m_Father: {fileID: 1707994599}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0}
-  m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: 200, y: 200}
-  m_SizeDelta: {x: 300, y: 50}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 150, y: 0}
+  m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1440207619
 MonoBehaviour:
@@ -2409,12 +2409,6 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
-    - target: {fileID: 8910034827059819553, guid: dba211a1053f7e64a96dc2dbad91d9a7,
-        type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: 034ae761103838643a90e3ddab32a1f2,
-        type: 3}
     - target: {fileID: 8910034826537034686, guid: dba211a1053f7e64a96dc2dbad91d9a7,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
@@ -2511,6 +2505,12 @@ PrefabInstance:
       propertyPath: m_Colors.m_SelectedColor.b
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 8910034827059819553, guid: dba211a1053f7e64a96dc2dbad91d9a7,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 034ae761103838643a90e3ddab32a1f2,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dba211a1053f7e64a96dc2dbad91d9a7, type: 3}
 --- !u!1 &1538547694
@@ -3021,10 +3021,10 @@ RectTransform:
   m_Father: {fileID: 1707994599}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0}
-  m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: 200, y: 100}
-  m_SizeDelta: {x: 300, y: 50}
+  m_AnchorMin: {x: 0.5, y: 0.19678542}
+  m_AnchorMax: {x: 0.5, y: 0.19678542}
+  m_AnchoredPosition: {x: 150, y: 0}
+  m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1995281172
 MonoBehaviour:
@@ -3244,12 +3244,6 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
-    - target: {fileID: 8910034827059819553, guid: dba211a1053f7e64a96dc2dbad91d9a7,
-        type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: 1daaa4159ad941c4b91fb7d2acd75f1a,
-        type: 3}
     - target: {fileID: 8910034826537034686, guid: dba211a1053f7e64a96dc2dbad91d9a7,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
@@ -3340,5 +3334,11 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
+    - target: {fileID: 8910034827059819553, guid: dba211a1053f7e64a96dc2dbad91d9a7,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 1daaa4159ad941c4b91fb7d2acd75f1a,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dba211a1053f7e64a96dc2dbad91d9a7, type: 3}
