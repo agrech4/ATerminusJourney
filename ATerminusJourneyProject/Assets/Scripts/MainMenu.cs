@@ -6,8 +6,9 @@ using UnityEngine.UI;
 
 public class MainMenu : MonoBehaviour {
 
-    public int charSelect = 0;
+    public PlayerData playerData;
     public string sceneToLoad;
+
 
     private void Start() {
 
@@ -17,16 +18,8 @@ public class MainMenu : MonoBehaviour {
 
     }
 
-    public void SetChar(int i) {
-        charSelect = i;
-        switch (charSelect) {
-            case 0:
-                Debug.Log("Barbarian");
-                break;
-            case 1:
-                Debug.Log("Druid");
-                break;
-        }
+    public void SetAnimator(RuntimeAnimatorController animator) {
+        playerData.animatorController = animator;
     }
 
     public void SetScene(string scene) {

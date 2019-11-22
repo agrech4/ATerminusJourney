@@ -330,6 +330,19 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 1151177421}
+        m_MethodName: SetAnimator
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 9100000, guid: 5a98c0694fc73614c9801625f61ba0a5,
+            type: 2}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.RuntimeAnimatorController,
+            UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1151177421}
         m_MethodName: PlayGame
         m_Mode: 1
         m_Arguments:
@@ -1741,6 +1754,19 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 1151177421}
+        m_MethodName: SetAnimator
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 9100000, guid: 286273c4061939a4a9346f2dca47dd63,
+            type: 2}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.RuntimeAnimatorController,
+            UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1151177421}
         m_MethodName: PlayGame
         m_Mode: 1
         m_Arguments:
@@ -1995,8 +2021,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e704b4c11603a848a0ef06821c3ee65, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  charSelect: 0
-  sceneToLoad: 
+  playerData: {fileID: 11400000, guid: 1ff804ef1466c3642b1768937b95c2ef, type: 2}
+  sceneToLoad: TownHub
 --- !u!1 &1155489965
 GameObject:
   m_ObjectHideFlags: 0
@@ -2243,6 +2269,19 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: TownHub
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1151177421}
+        m_MethodName: SetAnimator
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 9100000, guid: cd9a5580d840e774799afe4560c32182,
+            type: 2}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.RuntimeAnimatorController,
+            UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 1151177421}
@@ -3078,6 +3117,19 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: TownHub
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1151177421}
+        m_MethodName: SetAnimator
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 9100000, guid: ffae1cf7bd46dcd4987cee790a743d78,
+            type: 2}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.RuntimeAnimatorController,
+            UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 1151177421}
