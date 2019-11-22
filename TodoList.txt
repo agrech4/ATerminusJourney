@@ -1,9 +1,12 @@
 Art Devepment and Design TO-DO:
 Animations
-Back button
 HUB World Improvements
 Develop a Narative
 
 Head of Programming TO-DO:
 Characters persist through character select
 Return to Main Menu Button
+Player Statistics
+Item Pick-up
+Item interact
+Save game
