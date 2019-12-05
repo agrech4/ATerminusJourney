@@ -12,6 +12,7 @@ public class PlayerController : MonoBehaviour {
     private Rigidbody2D myRigidBody;
     private Vector2 deltaPosition;
     private Animator animator;
+    private IEnumerator waitForIdle;
     public PlayerData playerData;
     public PlayerState playerState;
     public float moveSpeed = 5f;
@@ -38,9 +39,17 @@ public class PlayerController : MonoBehaviour {
             MoveCharacter();
             animator.SetFloat("moveX", deltaPosition.x);
             animator.SetBool("isMoving", true);
+            animator.SetBool("idle", false);
+            if (waitForIdle != null) {
+                StopCoroutine(waitForIdle);
+                waitForIdle = null;
+            }
         } else if (animator.GetBool("isMoving")){
             animator.SetBool("isMoving", false);
-            StartCoroutine(WaitForIdle());
+            if (waitForIdle == null) {
+                waitForIdle = WaitForIdle();
+                StartCoroutine(waitForIdle);
+            }
         }
     }
 
@@ -53,8 +62,7 @@ public class PlayerController : MonoBehaviour {
     private IEnumerator WaitForIdle() {
         yield return new WaitForSeconds(timeToIdle);
         animator.SetBool("idle", true);
-        yield return new WaitForSeconds(.1f);
-        animator.SetBool("idle", false);
+        waitForIdle = null;
     }
 
 }
