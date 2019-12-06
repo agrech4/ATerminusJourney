@@ -10,6 +10,8 @@ public class CameraController : MonoBehaviour {
 
     private float leftBound;
     private float rightBound;
+    private float topBound;
+    private float bottomBound;
 
     // Start is called before the first frame update
     void Start() {
@@ -18,9 +20,12 @@ public class CameraController : MonoBehaviour {
         float camClearance = cam.orthographicSize * cam.aspect;
         leftBound = background.bounds.min.x + camClearance;
         rightBound = background.bounds.max.x - camClearance;
+        bottomBound = background.bounds.min.y + cam.orthographicSize;
+        topBound = background.bounds.max.y - cam.orthographicSize;
 
-        Vector3 targetPosition = new Vector3(target.position.x, transform.position.y, transform.position.z);
+        Vector3 targetPosition = new Vector3(target.position.x, target.position.y, transform.position.z);
         targetPosition.x = Mathf.Clamp(targetPosition.x, leftBound, rightBound);
+        targetPosition.y = Mathf.Clamp(targetPosition.y, bottomBound, topBound);
 
         if (transform.position != targetPosition) {
             transform.position = targetPosition;
@@ -29,8 +34,9 @@ public class CameraController : MonoBehaviour {
 
     // Update is called once per frame
     void FixedUpdate() {
-        Vector3 targetPosition = new Vector3(target.position.x, transform.position.y, transform.position.z);
+        Vector3 targetPosition = new Vector3(target.position.x, target.position.y, transform.position.z);
         targetPosition.x = Mathf.Clamp(targetPosition.x, leftBound, rightBound);
+        targetPosition.y = Mathf.Clamp(targetPosition.y, bottomBound, topBound);
 
         if (transform.position != targetPosition) {
             transform.position = Vector3.Lerp(transform.position, targetPosition, smoothing);
