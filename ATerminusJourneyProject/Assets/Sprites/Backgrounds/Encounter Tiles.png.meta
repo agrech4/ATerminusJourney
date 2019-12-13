@@ -1,0 +1,1423 @@
+fileFormatVersion: 2
+guid: 61a4b0c6bbd7e814883177565659de39
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 7477983264522842875
+    second: Encounter Tiles_0
+  - first:
+      213: 1533728141267533685
+    second: Encounter Tiles_1
+  - first:
+      213: 8898651890242705058
+    second: Encounter Tiles_2
+  - first:
+      213: -2680839630560384565
+    second: Encounter Tiles_3
+  - first:
+      213: 2810238247938968458
+    second: Encounter Tiles_4
+  - first:
+      213: -7636327130763464900
+    second: Encounter Tiles_5
+  - first:
+      213: 4120740854686413282
+    second: Encounter Tiles_6
+  - first:
+      213: 5771749827706183892
+    second: Encounter Tiles_7
+  - first:
+      213: 6250264622521291919
+    second: Encounter Tiles_8
+  - first:
+      213: 7260433969992011534
+    second: Encounter Tiles_9
+  - first:
+      213: -7920218554672725819
+    second: Encounter Tiles_10
+  - first:
+      213: -4363690094384199009
+    second: Encounter Tiles_11
+  - first:
+      213: 6663407397438107761
+    second: Encounter Tiles_12
+  - first:
+      213: 638511837433093897
+    second: Encounter Tiles_13
+  - first:
+      213: -7435693947136425099
+    second: Encounter Tiles_14
+  - first:
+      213: -5043184219828266527
+    second: Encounter Tiles_15
+  - first:
+      213: -7081006485404509866
+    second: Encounter Tiles_16
+  - first:
+      213: -8205100330587739651
+    second: Encounter Tiles_17
+  - first:
+      213: 4561547744672426027
+    second: Encounter Tiles_18
+  - first:
+      213: 3190568453322973073
+    second: Encounter Tiles_19
+  - first:
+      213: -4355217120568398470
+    second: Encounter Tiles_20
+  - first:
+      213: -4918802673641046097
+    second: Encounter Tiles_21
+  - first:
+      213: 804780676322696270
+    second: Encounter Tiles_22
+  - first:
+      213: -7694011955380547681
+    second: Encounter Tiles_23
+  - first:
+      213: 8742902863974570770
+    second: Encounter Tiles_24
+  - first:
+      213: -5439747997563742869
+    second: Encounter Tiles_25
+  - first:
+      213: 7580590186088466570
+    second: Encounter Tiles_26
+  - first:
+      213: 5486097839250043918
+    second: Encounter Tiles_27
+  - first:
+      213: -4924462158467830215
+    second: Encounter Tiles_28
+  - first:
+      213: -2717087308526017953
+    second: Encounter Tiles_29
+  - first:
+      213: 1411865116951978202
+    second: Encounter Tiles_30
+  - first:
+      213: -6731390696641030777
+    second: Encounter Tiles_31
+  - first:
+      213: -3187713533143842718
+    second: Encounter Tiles_32
+  - first:
+      213: -3089962566924049660
+    second: Encounter Tiles_33
+  - first:
+      213: -2063178432619130896
+    second: Encounter Tiles_34
+  - first:
+      213: 3578483978721927214
+    second: Encounter Tiles_35
+  - first:
+      213: -2281466944514225598
+    second: Encounter Tiles_36
+  - first:
+      213: -8263883685840566030
+    second: Encounter Tiles_37
+  - first:
+      213: -5557796204001328755
+    second: Encounter Tiles_38
+  - first:
+      213: 408705459623818270
+    second: Encounter Tiles_39
+  - first:
+      213: -1030270877164789095
+    second: Encounter Tiles_40
+  - first:
+      213: 2744022534705724318
+    second: Encounter Tiles_41
+  - first:
+      213: 3731593383556697458
+    second: Encounter Tiles_42
+  - first:
+      213: -1688136750702429956
+    second: Encounter Tiles_43
+  - first:
+      213: -7735173379905656381
+    second: Encounter Tiles_44
+  - first:
+      213: -990428806768367427
+    second: Encounter Tiles_45
+  - first:
+      213: 643625405081329503
+    second: Encounter Tiles_46
+  - first:
+      213: -5387297797581559924
+    second: Encounter Tiles_47
+  - first:
+      213: 4661635123780959265
+    second: Encounter Tiles_48
+  - first:
+      213: -5581435132102460407
+    second: Encounter Tiles_49
+  - first:
+      213: 8473908664745607488
+    second: Encounter Tiles_50
+  - first:
+      213: -8182514950428286433
+    second: Encounter Tiles_51
+  - first:
+      213: -3793373721818850042
+    second: Encounter Tiles_52
+  - first:
+      213: 6326460619696579990
+    second: Encounter Tiles_53
+  - first:
+      213: 3356199932527285189
+    second: Encounter Tiles_54
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 19
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Encounter Tiles_0
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 171
+        width: 19
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e0273ef461a1724d990672f97514870
+      internalID: 7477983264522842875
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Encounter Tiles_1
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 171
+        width: 19
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2086e2cf5375744ca2a823d6fed5e27
+      internalID: 1533728141267533685
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Encounter Tiles_2
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 171
+        width: 19
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0ef0a06cc1166c4da5239c5854e1982
+      internalID: 8898651890242705058
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Encounter Tiles_3
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 171
+        width: 19
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d10dc8f5222f85e4fb19d7ef809432c2
+      internalID: -2680839630560384565
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Encounter Tiles_4
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 171
+        width: 19
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f771657816a58d448bc52fc588aa17c2
+      internalID: 2810238247938968458
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Encounter Tiles_5
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 171
+        width: 19
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f677f7985060e5448275e0512e15438
+      internalID: -7636327130763464900
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Encounter Tiles_6
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 171
+        width: 19
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0dd1cd9482a32a844803cb57d3132221
+      internalID: 4120740854686413282
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Encounter Tiles_7
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 171
+        width: 19
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 807f27f8383a2a5408f5ce721f63fd81
+      internalID: 5771749827706183892
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Encounter Tiles_8
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 171
+        width: 19
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7acab0d9b43f69b4096fb611c27d08fa
+      internalID: 6250264622521291919
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Encounter Tiles_9
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 151
+        width: 19
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68aa8381f53fa3049864be24984e5917
+      internalID: 7260433969992011534
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Encounter Tiles_10
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 151
+        width: 19
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 523d1206db10f394ba3196e81c141e36
+      internalID: -7920218554672725819
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Encounter Tiles_11
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 151
+        width: 19
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04442ff2aa554034f99d54b12f6bceb0
+      internalID: -4363690094384199009
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Encounter Tiles_12
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 151
+        width: 19
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82e7689647a560d4fa28da11bee06367
+      internalID: 6663407397438107761
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Encounter Tiles_13
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 151
+        width: 19
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 043b72bc3ebb1f44a9a92c7d270033c1
+      internalID: 638511837433093897
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Encounter Tiles_14
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 151
+        width: 19
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3de12af3bac13be4986a1db8950dca70
+      internalID: -7435693947136425099
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Encounter Tiles_15
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 151
+        width: 19
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 311c8e7e717e0d548aa6d6c472bf98f7
+      internalID: -5043184219828266527
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Encounter Tiles_16
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 151
+        width: 19
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04fd9fcdb6fad8a48a054c39dc9d1b45
+      internalID: -7081006485404509866
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Encounter Tiles_17
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 151
+        width: 19
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93f3538a8cc33ea4f93cad7f03721841
+      internalID: -8205100330587739651
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Encounter Tiles_18
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 131
+        width: 19
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e13da1a9cd0ea7d4aa76df97fea99aba
+      internalID: 4561547744672426027
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Encounter Tiles_19
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 131
+        width: 19
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69d5b00dde369524e8171117439b11af
+      internalID: 3190568453322973073
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Encounter Tiles_20
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 131
+        width: 19
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d47ed31b118ac64ea275249bad490c0
+      internalID: -4355217120568398470
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Encounter Tiles_21
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 131
+        width: 19
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b19005af3c98d4e4fb763a4b34c98597
+      internalID: -4918802673641046097
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Encounter Tiles_22
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 131
+        width: 19
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5cacf3497eba7744386da2732a3ed9cf
+      internalID: 804780676322696270
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Encounter Tiles_23
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 131
+        width: 19
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a7f29cf766d456408b6c23d6f1e7197
+      internalID: -7694011955380547681
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Encounter Tiles_24
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 131
+        width: 19
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4cae25c43f2d8cb47a38262330d611c3
+      internalID: 8742902863974570770
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Encounter Tiles_25
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 131
+        width: 19
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88eb19f4ea8e30d428c04f096c80b367
+      internalID: -5439747997563742869
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Encounter Tiles_26
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 131
+        width: 19
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ece75505bbdfa843a4093e54362d540
+      internalID: 7580590186088466570
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Encounter Tiles_27
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 111
+        width: 19
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8bc18ec318259ec49b5d0dd02c9499ab
+      internalID: 5486097839250043918
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Encounter Tiles_28
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 111
+        width: 19
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d34f5b1f0473fa0419df1919d3adeb23
+      internalID: -4924462158467830215
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Encounter Tiles_29
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 111
+        width: 19
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ca7b11a7f57c5c43bb3c023bd44ac97
+      internalID: -2717087308526017953
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Encounter Tiles_30
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 111
+        width: 19
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6b0189d717b1784486b9c6d2e683064
+      internalID: 1411865116951978202
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Encounter Tiles_31
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 111
+        width: 19
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a35e155086a7e34bb29fcb5af2aa61a
+      internalID: -6731390696641030777
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Encounter Tiles_32
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 111
+        width: 19
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57907998bc6e3d94f842a2d43ba0e20c
+      internalID: -3187713533143842718
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Encounter Tiles_33
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 111
+        width: 19
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b834bd751738e8d4bbd1f9fb045b0f6e
+      internalID: -3089962566924049660
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Encounter Tiles_34
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 111
+        width: 19
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a0df995233d8644984479a37c549640
+      internalID: -2063178432619130896
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Encounter Tiles_35
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 111
+        width: 19
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74a82c9a677c647428c7664eee8d6e0b
+      internalID: 3578483978721927214
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Encounter Tiles_36
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 91
+        width: 19
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eaf49ab6cbc6a2b4e948cc12fd1c64ee
+      internalID: -2281466944514225598
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Encounter Tiles_37
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 91
+        width: 19
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9252681f2f6dcd045a02754f39e9a7a0
+      internalID: -8263883685840566030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Encounter Tiles_38
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 91
+        width: 19
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a84f5b4bfc97e6240b12c629b8344a09
+      internalID: -5557796204001328755
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Encounter Tiles_39
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 91
+        width: 19
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd3718209123cd940b8ba1b933c27bc9
+      internalID: 408705459623818270
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Encounter Tiles_40
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 91
+        width: 19
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69e15c68de24899418d6b3bf91d7322f
+      internalID: -1030270877164789095
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Encounter Tiles_41
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 91
+        width: 19
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18e47b585b64ce646a873a14599866b9
+      internalID: 2744022534705724318
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Encounter Tiles_42
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 91
+        width: 19
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01709c911806dd34eb84d79a81e116e1
+      internalID: 3731593383556697458
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Encounter Tiles_43
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 71
+        width: 19
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ade9d6390c8bd14da6419892afdfe1e
+      internalID: -1688136750702429956
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Encounter Tiles_44
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 71
+        width: 19
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ae1285d0c525da40917f830578712f3
+      internalID: -7735173379905656381
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Encounter Tiles_45
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 71
+        width: 19
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0064e34b3866c884d9258e419615cf5d
+      internalID: -990428806768367427
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Encounter Tiles_46
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 51
+        width: 19
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a444aaf0fec91942afd58a3ddc4e0fb
+      internalID: 643625405081329503
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Encounter Tiles_47
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 51
+        width: 19
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 87e22ec2b26b8cd49884bd0351f76e22
+      internalID: -5387297797581559924
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Encounter Tiles_48
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 51
+        width: 19
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 924092090eeb2204a9f2342df4ceef66
+      internalID: 4661635123780959265
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Encounter Tiles_49
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 31
+        width: 19
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aeeef0e58d976cb47a8fb35ed8a65dea
+      internalID: -5581435132102460407
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Encounter Tiles_50
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 31
+        width: 19
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0e65107e7cc89b4aae5883f7f30bf65
+      internalID: 8473908664745607488
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Encounter Tiles_51
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 31
+        width: 19
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97503a2784591bc40ba3400b4f65fde7
+      internalID: -8182514950428286433
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Encounter Tiles_52
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 11
+        width: 19
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9bce40adea95f16498aa33b7663ce8d9
+      internalID: -3793373721818850042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Encounter Tiles_53
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 11
+        width: 19
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4101b2afe1641247b1d64544703b111
+      internalID: 6326460619696579990
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Encounter Tiles_54
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 11
+        width: 19
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3be214ae3a80ba5489355b16e0abda10
+      internalID: 3356199932527285189
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
