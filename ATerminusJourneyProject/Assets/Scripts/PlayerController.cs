@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.Tilemaps;
 
 public enum PlayerState {
     moving,
@@ -20,10 +21,11 @@ public class PlayerController : MonoBehaviour {
     public float moveSpeed = 5f;
     public bool isReversed = false;
     public int timeToIdle = 2;
-    public float gridScaleX = 2f;
-    public float gridScaleY = 1.732051f;
-    public float gridMoveWait = .1f;
-    private bool gridCanMove = true;
+    public float hexGridScaleX = 2f;
+    public float hexGridScaleY = 1.732051f;
+    public float hexGridMoveWait = .1f;
+    private bool hexGridCanMove = true;
+    public Tilemap tilemap;
 
     // Start is called before the first frame update
     void Start() {
@@ -65,7 +67,7 @@ public class PlayerController : MonoBehaviour {
                 }
             }
         } else {
-            if(gridCanMove) {
+            if(hexGridCanMove) {
                 if (MoveCharacterGrid()) {
                     StartCoroutine(WaitForGridMove());
                 }
@@ -83,17 +85,19 @@ public class PlayerController : MonoBehaviour {
         deltaPosition.y = (int)System.Math.Round(deltaPosition.y, 0);
         deltaPosition.x *= System.Math.Abs(deltaPosition.y);
         deltaPosition.y -= deltaPosition.y * .5f * System.Math.Abs(deltaPosition.x);
-        deltaPosition.x *= gridScaleX * .75f;
-        deltaPosition.y *= gridScaleY;
-        myRigidBody.MovePosition(myRigidBody.position + deltaPosition);
+        deltaPosition.x *= hexGridScaleX * .75f;
+        deltaPosition.y *= hexGridScaleY;
+        Vector3Int tile = tilemap.WorldToCell(myRigidBody.position + deltaPosition);
+        if (!tilemap.HasTile(tile)) {
+            myRigidBody.MovePosition(myRigidBody.position + deltaPosition);
+        }
         return (deltaPosition != Vector2.zero);
     }
 
-
     private IEnumerator WaitForGridMove() {
-        gridCanMove = false;
-        yield return new WaitForSeconds(gridMoveWait);
-        gridCanMove = true;
+        hexGridCanMove = false;
+        yield return new WaitForSeconds(hexGridMoveWait);
+        hexGridCanMove = true;
     }
 
     private IEnumerator WaitForIdle() {
