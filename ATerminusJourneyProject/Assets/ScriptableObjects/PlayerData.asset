@@ -13,3 +13,4 @@ MonoBehaviour:
   m_Name: PlayerData
   m_EditorClassIdentifier: 
   animatorController: {fileID: 9100000, guid: ffae1cf7bd46dcd4987cee790a743d78, type: 2}
+  charName: Barbarian

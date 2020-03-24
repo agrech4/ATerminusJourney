@@ -183,3 +183,8 @@ MonoBehaviour:
   playerState: 0
   moveSpeed: 6
   isReversed: 0
+  timeToIdle: 2
+  gridScaleX: 2
+  gridScaleY: 1.732051
+  gridMoveWait: 0.1
+  tilemap: {fileID: 0}

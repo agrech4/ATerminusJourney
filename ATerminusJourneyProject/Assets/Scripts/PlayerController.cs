@@ -7,6 +7,7 @@ using UnityEngine.Tilemaps;
 public enum PlayerState {
     moving,
     overworld,
+    encounter,
     inMenu
 }
 
@@ -21,10 +22,10 @@ public class PlayerController : MonoBehaviour {
     public float moveSpeed = 5f;
     public bool isReversed = false;
     public int timeToIdle = 2;
-    public float hexGridScaleX = 2f;
-    public float hexGridScaleY = 1.732051f;
-    public float hexGridMoveWait = .1f;
-    private bool hexGridCanMove = true;
+    public float gridScaleX = 2f;
+    public float gridScaleY = 1.732051f;
+    public float gridMoveWait = .1f;
+    private bool gridCanMove = true;
     public Tilemap tilemap;
 
     // Start is called before the first frame update
@@ -37,6 +38,9 @@ public class PlayerController : MonoBehaviour {
         if(SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Overworld")) {
             playerState = PlayerState.overworld;
             animator.SetBool("onOverworld", true);
+        } else if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Encounter")) {
+            playerState = PlayerState.encounter;
+            animator.SetBool("onEncounter", true);
         }
     }
 
@@ -48,7 +52,7 @@ public class PlayerController : MonoBehaviour {
     }
 
     private void FixedUpdate() {
-        if (playerState != PlayerState.overworld) {
+        if (playerState != PlayerState.overworld && playerState != PlayerState.encounter) {
             deltaPosition.y = 0;
             if (deltaPosition != Vector2.zero && playerState == PlayerState.moving) {
                 MoveCharacter();
@@ -66,8 +70,8 @@ public class PlayerController : MonoBehaviour {
                     StartCoroutine(waitForIdle);
                 }
             }
-        } else {
-            if(hexGridCanMove) {
+        } else{
+            if(gridCanMove) {
                 if (MoveCharacterGrid()) {
                     StartCoroutine(WaitForGridMove());
                 }
@@ -81,23 +85,41 @@ public class PlayerController : MonoBehaviour {
     }
 
     bool MoveCharacterGrid() {
-        deltaPosition.x = (int)System.Math.Round(deltaPosition.x, 0);
-        deltaPosition.y = (int)System.Math.Round(deltaPosition.y, 0);
-        deltaPosition.x *= System.Math.Abs(deltaPosition.y);
-        deltaPosition.y -= deltaPosition.y * .5f * System.Math.Abs(deltaPosition.x);
-        deltaPosition.x *= hexGridScaleX * .75f;
-        deltaPosition.y *= hexGridScaleY;
-        Vector3Int tile = tilemap.WorldToCell(myRigidBody.position + deltaPosition);
-        if (!tilemap.HasTile(tile)) {
-            myRigidBody.MovePosition(myRigidBody.position + deltaPosition);
+        if (playerState == PlayerState.overworld) {
+            deltaPosition.x = (int)System.Math.Round(deltaPosition.x, 0);
+            deltaPosition.y = (int)System.Math.Round(deltaPosition.y, 0);
+            deltaPosition.x *= System.Math.Abs(deltaPosition.y);
+            deltaPosition.y -= deltaPosition.y * .5f * System.Math.Abs(deltaPosition.x);
+            deltaPosition.x *= gridScaleX * .75f;
+            deltaPosition.y *= gridScaleY;
+            Vector3Int tile = tilemap.WorldToCell(myRigidBody.position + deltaPosition);
+            bool moved = false;
+            if (!tilemap.HasTile(tile) && deltaPosition != Vector2.zero) {
+                myRigidBody.MovePosition(myRigidBody.position + deltaPosition);
+                moved = true;
+            }
+            deltaPosition = Vector2.zero;
+            return moved;
+        } else {
+            deltaPosition.x = (int)System.Math.Round(deltaPosition.x, 0);
+            deltaPosition.y = (int)System.Math.Round(deltaPosition.y, 0);
+            deltaPosition.x *= gridScaleX;
+            deltaPosition.y *= gridScaleY;
+            Vector3Int tile = tilemap.WorldToCell(myRigidBody.position + deltaPosition);
+            bool moved = false;
+            if (!tilemap.HasTile(tile) && deltaPosition != Vector2.zero) {
+                myRigidBody.MovePosition(myRigidBody.position + deltaPosition);
+                moved = true;
+            }
+            deltaPosition = Vector2.zero;
+            return moved;
         }
-        return (deltaPosition != Vector2.zero);
     }
 
     private IEnumerator WaitForGridMove() {
-        hexGridCanMove = false;
-        yield return new WaitForSeconds(hexGridMoveWait);
-        hexGridCanMove = true;
+        gridCanMove = false;
+        yield return new WaitForSeconds(gridMoveWait);
+        gridCanMove = true;
     }
 
     private IEnumerator WaitForIdle() {
