@@ -98,7 +98,6 @@ public class PlayerController : MonoBehaviour {
                 myRigidBody.MovePosition(myRigidBody.position + deltaPosition);
                 moved = true;
             }
-            deltaPosition = Vector2.zero;
             return moved;
         } else {
             deltaPosition.x = (int)System.Math.Round(deltaPosition.x, 0);
@@ -111,7 +110,6 @@ public class PlayerController : MonoBehaviour {
                 myRigidBody.MovePosition(myRigidBody.position + deltaPosition);
                 moved = true;
             }
-            deltaPosition = Vector2.zero;
             return moved;
         }
     }

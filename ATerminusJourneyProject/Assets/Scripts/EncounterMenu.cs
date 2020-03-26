@@ -6,6 +6,7 @@ using TMPro;
 public class EncounterMenu : MonoBehaviour
 {
 
+    public GameObject encounterMenu;
     public PlayerData playerData;
     public TMP_Text playerName;
 
@@ -21,6 +22,16 @@ public class EncounterMenu : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if (Input.GetButtonDown("Menu")) {
+            ToggleMenu();
+        }
     }
+
+
+
+    void ToggleMenu() {
+        encounterMenu.SetActive(!encounterMenu.activeInHierarchy);
+    }
+
+
 }
