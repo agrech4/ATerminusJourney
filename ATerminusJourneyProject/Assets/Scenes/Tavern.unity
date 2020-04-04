@@ -200,18 +200,29 @@ Rigidbody2D:
     type: 3}
   m_PrefabInstance: {fileID: 85337532}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &85337534 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 6259617028575573518, guid: 08246bf8f30a6aa4a9d46bcc911ea051,
+--- !u!1 &85337534 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6259617028575573513, guid: 08246bf8f30a6aa4a9d46bcc911ea051,
     type: 3}
   m_PrefabInstance: {fileID: 85337532}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+--- !u!114 &85337535
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 85337534}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 491ed1488ab9d944497962201054ee75, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerData: {fileID: 11400000, guid: 1ff804ef1466c3642b1768937b95c2ef, type: 2}
+  playerState: 0
+  moveSpeed: 5
+  isReversed: 0
+  timeToIdle: 2
 --- !u!1 &1257161720
 GameObject:
   m_ObjectHideFlags: 0
@@ -369,7 +380,7 @@ PrefabInstance:
         type: 3}
       propertyPath: player
       value: 
-      objectReference: {fileID: 85337534}
+      objectReference: {fileID: 85337535}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e8197e20d56ec724684037223c70cd5a, type: 3}
 --- !u!1 &1271725632 stripped
@@ -504,7 +515,7 @@ PrefabInstance:
         type: 3}
       propertyPath: playerController
       value: 
-      objectReference: {fileID: 85337534}
+      objectReference: {fileID: 0}
     - target: {fileID: 7648671821672620153, guid: acb2789942c50734093ac097187c2c68,
         type: 3}
       propertyPath: transitions.Array.data[0]
@@ -514,7 +525,7 @@ PrefabInstance:
         type: 3}
       propertyPath: player
       value: 
-      objectReference: {fileID: 85337534}
+      objectReference: {fileID: 0}
     - target: {fileID: 7648671820825332208, guid: acb2789942c50734093ac097187c2c68,
         type: 3}
       propertyPath: m_IsActive
