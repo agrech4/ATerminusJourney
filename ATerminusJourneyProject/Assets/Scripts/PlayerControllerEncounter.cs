@@ -16,7 +16,6 @@ public class PlayerControllerEncounter : PlayerController {
     // Start is called before the first frame update
     new void Start() {
         base.Start();
-        playerState = PlayerState.encounter;
         animator.SetBool("onEncounter", true);
     }
 

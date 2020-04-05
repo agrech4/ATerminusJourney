@@ -15,7 +15,6 @@ public class PlayerControllerTown : PlayerController {
     // Start is called before the first frame update
     new void Start() {
         base.Start();
-        playerState = PlayerState.moving;
         animator.SetFloat("moveX", 1f);
         
     }

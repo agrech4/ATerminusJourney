@@ -2,6 +2,7 @@ Art Devepment and Design TO-DO:
 Animations
 HUB World Improvements
 Develop a Narative
+UI back button for encounter menu
 
 Head of Programming TO-DO:
 Characters persist through character select
@@ -10,3 +11,4 @@ Player Statistics
 Item Pick-up
 Item interact
 Save game
+inventory system

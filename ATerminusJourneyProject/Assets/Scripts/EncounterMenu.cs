@@ -1,53 +1,48 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+using UnityEngine.EventSystems;
 using TMPro;
 
-public class EncounterMenu : MonoBehaviour
-{
+public class EncounterMenu : MonoBehaviour {
 
-    public GameObject Canvas;
+    public Animator animator;
     public PlayerData playerData;
     public TMP_Text playerName;
-    private Animator animator;
-    private bool activeMenu = true;
-    private bool menuWait = false;
+    public GameObject selectedButton;
+    public PlayerController player;
+    public GameObject pauseMenu;
+    private bool activeMenu = false;
 
 
 
     // Start is called before the first frame update
-    void Start()
-    {
-        animator = Canvas.GetComponent<Animator>();
+    void Start() {
         playerName.text = playerData.charName;
     }
 
 
 
     // Update is called once per frame
-    void Update()
-    {
-        if (Input.GetButtonDown("Menu")) {
+    void Update() {
+        if (Input.GetButtonDown("Menu") && !pauseMenu.activeInHierarchy) {
             ToggleMenu();
         }
     }
 
-
+    public void SetActiveButton() {
+        EventSystem.current.SetSelectedGameObject(null);
+        EventSystem.current.SetSelectedGameObject(selectedButton);
+    }
 
     void ToggleMenu() {
-        if (!menuWait) {
-            activeMenu = !activeMenu;
-            float animationTime = animator.GetCurrentAnimatorClipInfo(0)[0].clip.length;
-            animator.SetBool("activeMenu", activeMenu);
-            //float animationTime = animator.GetCurrentAnimatorStateInfo(0).
-            //StartCoroutine(WaitForSlide());
+        activeMenu = !activeMenu;
+        animator.SetBool("activeMenu", activeMenu);
+        if (!activeMenu) {
+            selectedButton = EventSystem.current.currentSelectedGameObject;
+            EventSystem.current.SetSelectedGameObject(null);
         }
+        player.playerState = activeMenu ? PlayerState.inMenu : PlayerState.moving;
     }
-
-    private IEnumerator WaitForSlide() {
-        menuWait = true;
-        yield return new WaitForSeconds(.7f);
-        menuWait = false;
-    }
-
 }

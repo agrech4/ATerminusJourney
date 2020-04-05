@@ -16,7 +16,6 @@ public class PlayerControllerOverworld : PlayerController {
     // Start is called before the first frame update
     new void Start() {
         base.Start();
-        playerState = PlayerState.overworld;
         animator.SetBool("onOverworld", true);
     }
 

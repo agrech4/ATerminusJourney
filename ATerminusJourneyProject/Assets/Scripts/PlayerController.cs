@@ -6,8 +6,6 @@ using UnityEngine.Tilemaps;
 
 public enum PlayerState {
     moving,
-    overworld,
-    encounter,
     inMenu
 }
 
@@ -24,13 +22,16 @@ public class PlayerController : MonoBehaviour {
         myRigidBody = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
         animator.runtimeAnimatorController = playerData.animatorController;
+        playerState = PlayerState.moving;
     }
 
     // Update is called once per frame
     protected virtual void Update() {
         deltaPosition = Vector2.zero;
-        deltaPosition.x = Input.GetAxisRaw("Horizontal");
-        deltaPosition.y = Input.GetAxisRaw("Vertical");
+        if (playerState != PlayerState.inMenu) {
+            deltaPosition.x = Input.GetAxisRaw("Horizontal");
+            deltaPosition.y = Input.GetAxisRaw("Vertical");
+        }
     }
 
     public virtual void MoveCharacter() {
