@@ -40,7 +40,7 @@ public class EncounterMenu : MonoBehaviour
             float animationTime = animator.GetCurrentAnimatorClipInfo(0)[0].clip.length;
             animator.SetBool("activeMenu", activeMenu);
             //float animationTime = animator.GetCurrentAnimatorStateInfo(0).
-            StartCoroutine(WaitForSlide());
+            //StartCoroutine(WaitForSlide());
         }
     }
 
