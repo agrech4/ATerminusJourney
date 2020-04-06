@@ -6,8 +6,9 @@ using UnityEngine.SceneManagement;
 public class SceneTransition : MonoBehaviour {
 
     public string sceneToLoad;
-    private bool playerInRange;
     public PlayerController player;
+    public PlayerData playerData;
+    private bool playerInRange;
 
     // Start is called before the first frame update
     void Start() {
@@ -27,6 +28,7 @@ public class SceneTransition : MonoBehaviour {
     }
 
     private void LoadScene() {
+        playerData.currentScene = sceneToLoad;
         SceneManager.LoadScene(sceneToLoad);
     }
 

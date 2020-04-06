@@ -13,10 +13,12 @@ MonoBehaviour:
   m_Name: PlayerData
   m_EditorClassIdentifier: 
   animatorController: {fileID: 9100000, guid: ffae1cf7bd46dcd4987cee790a743d78, type: 2}
+  saveName: Save01
+  currentScene: Tavern
   charName: Priest
   lvl: 5
   exp: 13
-  expToNextLvl: 50
+  expToNextLvl: 51
   abilityScores:
     Strength: 18
     Dexterity: 20

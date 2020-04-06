@@ -43,7 +43,7 @@ public class PauseMenu : MonoBehaviour {
     }
 
     public void LoadGame() {
-        SaveSystem.LoadGame();
+
     }
 
     public void SaveGame() {

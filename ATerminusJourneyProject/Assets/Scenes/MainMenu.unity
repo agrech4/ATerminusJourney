@@ -2631,6 +2631,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerData: {fileID: 11400000, guid: 1ff804ef1466c3642b1768937b95c2ef, type: 2}
   sceneToLoad: TownHub
+  buttonPrefab: {fileID: 4806214097540976595, guid: 697775f6c8301b74987296ea2da32bf5,
+    type: 3}
+  buttonParent: {fileID: 1205164170}
+  buttonLoadGame: {fileID: 454857155}
 --- !u!1 &1155489965
 GameObject:
   m_ObjectHideFlags: 0
@@ -3249,7 +3253,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1567646701}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3f0c921eb4b9226408ae8e12eb22b94e, type: 3}
   m_Name: 

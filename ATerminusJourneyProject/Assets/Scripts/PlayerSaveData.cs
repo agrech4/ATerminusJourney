@@ -3,8 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [System.Serializable]
-public class PlayerSaveData
-{
+public class PlayerSaveData {
+
+    public string saveName;
+    public string currentScene;
     public string charName;
     public int lvl;
     public int exp;
@@ -17,6 +19,8 @@ public class PlayerSaveData
     public string[] inventory;
 
     public PlayerSaveData(PlayerData data) {
+        saveName = data.saveName;
+        currentScene = data.currentScene;
         charName = data.charName;
         lvl = data.lvl;
         exp = data.exp;

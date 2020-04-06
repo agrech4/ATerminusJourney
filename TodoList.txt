@@ -5,10 +5,10 @@ Develop a Narative
 UI back button for encounter menu
 
 Head of Programming TO-DO:
-Characters persist through character select
-Return to Main Menu Button
+Characters persist through character select //Kinda
+Return to Main Menu Button //Done
 Player Statistics
 Item Pick-up
 Item interact
-Save game
+Save game System // mostly done
 inventory system

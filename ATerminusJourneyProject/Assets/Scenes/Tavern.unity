@@ -408,6 +408,47 @@ PrefabInstance:
       propertyPath: m_Name
       value: InGameUI
       objectReference: {fileID: 0}
+    - target: {fileID: 7648671821672620153, guid: acb2789942c50734093ac097187c2c68,
+        type: 3}
+      propertyPath: transitions.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7648671821672620153, guid: acb2789942c50734093ac097187c2c68,
+        type: 3}
+      propertyPath: toSave.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7648671821672620153, guid: acb2789942c50734093ac097187c2c68,
+        type: 3}
+      propertyPath: playerController
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 7648671821672620153, guid: acb2789942c50734093ac097187c2c68,
+        type: 3}
+      propertyPath: transitions.Array.data[0]
+      value: 
+      objectReference: {fileID: 1271725632}
+    - target: {fileID: 7648671821672620153, guid: acb2789942c50734093ac097187c2c68,
+        type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 85337535}
+    - target: {fileID: 7648671821672620153, guid: acb2789942c50734093ac097187c2c68,
+        type: 3}
+      propertyPath: transitions.Array.data[1]
+      value: 
+      objectReference: {fileID: 1271725632}
+    - target: {fileID: 7648671821672620153, guid: acb2789942c50734093ac097187c2c68,
+        type: 3}
+      propertyPath: paused
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7648671821672620153, guid: acb2789942c50734093ac097187c2c68,
+        type: 3}
+      propertyPath: toSave.Array.data[0]
+      value: 
+      objectReference: {fileID: 11400000, guid: 1ff804ef1466c3642b1768937b95c2ef,
+        type: 2}
     - target: {fileID: 7648671820491578667, guid: acb2789942c50734093ac097187c2c68,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -513,46 +554,16 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7648671820491578668, guid: acb2789942c50734093ac097187c2c68,
-        type: 3}
-      propertyPath: m_Camera
-      value: 
-      objectReference: {fileID: 4790689644700915894}
-    - target: {fileID: 7648671821672620153, guid: acb2789942c50734093ac097187c2c68,
-        type: 3}
-      propertyPath: transitions.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7648671821672620153, guid: acb2789942c50734093ac097187c2c68,
-        type: 3}
-      propertyPath: playerController
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 7648671821672620153, guid: acb2789942c50734093ac097187c2c68,
-        type: 3}
-      propertyPath: transitions.Array.data[0]
-      value: 
-      objectReference: {fileID: 1271725632}
-    - target: {fileID: 7648671821672620153, guid: acb2789942c50734093ac097187c2c68,
-        type: 3}
-      propertyPath: player
-      value: 
-      objectReference: {fileID: 85337535}
-    - target: {fileID: 7648671821672620153, guid: acb2789942c50734093ac097187c2c68,
-        type: 3}
-      propertyPath: transitions.Array.data[1]
-      value: 
-      objectReference: {fileID: 1271725632}
-    - target: {fileID: 7648671821672620153, guid: acb2789942c50734093ac097187c2c68,
-        type: 3}
-      propertyPath: paused
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 7648671820825332208, guid: acb2789942c50734093ac097187c2c68,
         type: 3}
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7648671820491578668, guid: acb2789942c50734093ac097187c2c68,
+        type: 3}
+      propertyPath: m_Camera
+      value: 
+      objectReference: {fileID: 4790689644700915894}
     - target: {fileID: 7648671820667658881, guid: acb2789942c50734093ac097187c2c68,
         type: 3}
       propertyPath: m_IsActive
