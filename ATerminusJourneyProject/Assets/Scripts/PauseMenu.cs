@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -13,6 +14,7 @@ public class PauseMenu : MonoBehaviour {
     public PlayerController player;
     //I dont know why this is here/what my plans were, so Im just gonna leave it here for now
     public List<GameObject> transitions;
+    public List<ScriptableObject> toSave;
 
     // Start is called before the first frame update
     void Start() {
@@ -38,5 +40,25 @@ public class PauseMenu : MonoBehaviour {
 
     public void ReturnToMainMenu() {
         SceneManager.LoadScene("MainMenu");
+    }
+
+    public void LoadGame() {
+        SaveSystem.LoadGame();
+    }
+
+    public void SaveGame() {
+        SaveSystem.SaveGame(toSave[0] as PlayerData);
+        //string dir = Application.persistentDataPath;
+        //string fileName = @"Save";
+        //string fileExtension = @".json";
+        //string path = dir + fileName + fileExtension;
+        //if (!Directory.Exists(dir)) {
+        //    Directory.CreateDirectory(dir);
+        //}
+        //Debug.Log(path);
+        //using (FileStream fs = File.Create(path)) {
+        //    byte[] info = new UTF8Encoding(true).GetBytes("foook");
+        //    fs.Write(info, 0, info.Length);
+        //}
     }
 }

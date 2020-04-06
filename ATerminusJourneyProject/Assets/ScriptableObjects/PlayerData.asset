@@ -13,4 +13,25 @@ MonoBehaviour:
   m_Name: PlayerData
   m_EditorClassIdentifier: 
   animatorController: {fileID: 9100000, guid: ffae1cf7bd46dcd4987cee790a743d78, type: 2}
-  charName: Barbarian
+  charName: Priest
+  lvl: 5
+  exp: 13
+  expToNextLvl: 50
+  abilityScores:
+    Strength: 18
+    Dexterity: 20
+    Constitution: 4
+    Intelligence: 6
+    Wisdom: 7
+    Charisma: 19
+  saveProfs: 0000000001000000
+  skillProfs: 
+  weaponProfs: 
+  purse:
+    cp: 1000
+    sp: 100
+    ep: 20
+    gp: 10
+    pp: 1
+  inventory:
+  - {fileID: 11400000, guid: 388982839b74b6243addfe6ea57f7f9e, type: 2}
