@@ -8,6 +8,7 @@ public class PlayerSaveData {
     public string saveName;
     public string currentScene;
     public string charName;
+    public Role role;
     public int lvl;
     public int exp;
     public int expToNextLvl;
@@ -22,6 +23,7 @@ public class PlayerSaveData {
         saveName = data.saveName;
         currentScene = data.currentScene;
         charName = data.charName;
+        role = data.role;
         lvl = data.lvl;
         exp = data.exp;
         expToNextLvl = data.expToNextLvl;

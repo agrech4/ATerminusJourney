@@ -11,6 +11,13 @@ public enum Abilities {
     charisma,
 }
 
+public enum Role {
+    babarian,
+    druid,
+    fighter,
+    priest,
+}
+
 public enum DamageType {
     slashing,
     piercing,

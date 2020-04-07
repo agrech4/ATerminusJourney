@@ -13,9 +13,15 @@ MonoBehaviour:
   m_Name: PlayerData
   m_EditorClassIdentifier: 
   animatorController: {fileID: 9100000, guid: ffae1cf7bd46dcd4987cee790a743d78, type: 2}
+  animatorControllers:
+  - {fileID: 9100000, guid: 5a98c0694fc73614c9801625f61ba0a5, type: 2}
+  - {fileID: 9100000, guid: 286273c4061939a4a9346f2dca47dd63, type: 2}
+  - {fileID: 9100000, guid: cd9a5580d840e774799afe4560c32182, type: 2}
+  - {fileID: 9100000, guid: ffae1cf7bd46dcd4987cee790a743d78, type: 2}
   saveName: Save01
   currentScene: Tavern
   charName: Priest
+  role: 3
   lvl: 5
   exp: 13
   expToNextLvl: 51
@@ -30,7 +36,7 @@ MonoBehaviour:
   skillProfs: 
   weaponProfs: 
   purse:
-    cp: 1000
+    cp: 69
     sp: 100
     ep: 20
     gp: 10
