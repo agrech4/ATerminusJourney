@@ -20,14 +20,6 @@ public class MainMenu : MonoBehaviour {
         PopulateSaveList();
     }
 
-    public void Update() {
-
-    }
-
-    public void SetAnimator(RuntimeAnimatorController animator) {
-        playerData.animatorController = animator;
-    }
-
     public void PopulateSaveList() {
         List<string> saveFiles = SaveSystem.PopulateSaves();
         bool first = true;
@@ -58,26 +50,8 @@ public class MainMenu : MonoBehaviour {
         Debug.Log("ok");
     }
 
-    public void NewGame(string newRoleString) {
-        Role newRole = new Role();
-        switch (newRoleString) {
-            case "barbarian":
-            default:
-                newRole = Role.babarian;
-                break;
-            case "druid":
-                newRole = Role.druid;
-                break;
-            case "fighter":
-                newRole = Role.fighter;
-                break;
-            case "priest":
-                newRole = Role.priest;
-                break;
-        }
-        int saveNum = largestSaveNumber + 1;
-        string saveName = "Save" + saveNum.ToString("000");
-        playerData.NewCharacter(newRole, saveName);
+    public void NewGame(string newRole) {
+        playerData.NewCharacter(newRole, largestSaveNumber + 1);
         SceneManager.LoadScene(initialScene.ToString());
     }
 

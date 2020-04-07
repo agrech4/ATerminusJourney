@@ -55,11 +55,26 @@ public class PlayerData : ScriptableObject {
     }
 
 
-    public void NewCharacter(Role newRole, string saveName) {
-        this.saveName = saveName;
-        charName = newRole.ToString();
-        role = newRole;
+    public void NewCharacter(string newRole, int saveNum) {
+        switch (newRole) {
+            case "barbarian":
+            default:
+                role = Role.babarian;
+                break;
+            case "druid":
+                role = Role.druid;
+                break;
+            case "fighter":
+                role = Role.fighter;
+                break;
+            case "priest":
+                role = Role.priest;
+                break;
+        }
         ChooseAnimator();
+        saveName = "Save" + saveNum.ToString("000");
+        currentScene = "TownHub";
+        charName = newRole.ToString();
         lvl = 1;
         exp = 0;
         expToNextLvl = 300;

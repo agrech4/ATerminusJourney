@@ -12,34 +12,34 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 318f1ca8b10116b449ff16a351134435, type: 3}
   m_Name: PlayerData
   m_EditorClassIdentifier: 
-  animatorController: {fileID: 9100000, guid: ffae1cf7bd46dcd4987cee790a743d78, type: 2}
+  animatorController: {fileID: 9100000, guid: 5a98c0694fc73614c9801625f61ba0a5, type: 2}
   animatorControllers:
   - {fileID: 9100000, guid: 5a98c0694fc73614c9801625f61ba0a5, type: 2}
   - {fileID: 9100000, guid: 286273c4061939a4a9346f2dca47dd63, type: 2}
   - {fileID: 9100000, guid: cd9a5580d840e774799afe4560c32182, type: 2}
   - {fileID: 9100000, guid: ffae1cf7bd46dcd4987cee790a743d78, type: 2}
-  saveName: Save01
-  currentScene: Tavern
-  charName: Priest
-  role: 3
-  lvl: 5
-  exp: 13
-  expToNextLvl: 51
+  saveName: Save002
+  currentScene: TownHub
+  charName: babarian
+  role: 0
+  lvl: 1
+  exp: 0
+  expToNextLvl: 300
   abilityScores:
-    Strength: 18
-    Dexterity: 20
-    Constitution: 4
-    Intelligence: 6
-    Wisdom: 7
-    Charisma: 19
-  saveProfs: 0000000001000000
+    Strength: 0
+    Dexterity: 0
+    Constitution: 0
+    Intelligence: 0
+    Wisdom: 0
+    Charisma: 0
+  saveProfs: 
   skillProfs: 
   weaponProfs: 
   purse:
-    cp: 69
-    sp: 100
-    ep: 20
-    gp: 10
-    pp: 1
+    cp: 0
+    sp: 0
+    ep: 0
+    gp: 0
+    pp: 0
   inventory:
   - {fileID: 11400000, guid: 388982839b74b6243addfe6ea57f7f9e, type: 2}

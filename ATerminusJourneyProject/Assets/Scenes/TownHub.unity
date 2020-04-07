@@ -440,7 +440,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogueActive: 0
   playerInRange: 0
-  player: {fileID: 0}
+  player: {fileID: 1233808954}
   dialogue: Hello
   dialogueBox: {fileID: 1987109664}
   dialogueText: {fileID: 840198764}
@@ -1055,6 +1055,11 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 1233808954}
+    - target: {fileID: 7075436112095968482, guid: acb2789942c50734093ac097187c2c68,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7648671820491578667, guid: acb2789942c50734093ac097187c2c68,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1199,11 +1204,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Camera
       value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 7075436112095968482, guid: acb2789942c50734093ac097187c2c68,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5371434527132426981, guid: acb2789942c50734093ac097187c2c68,
         type: 3}
