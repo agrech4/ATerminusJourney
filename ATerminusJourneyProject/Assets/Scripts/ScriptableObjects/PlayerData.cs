@@ -6,9 +6,11 @@ using UnityEngine;
 public class PlayerData : ScriptableObject {
 
     public RuntimeAnimatorController animatorController;
+    public RuntimeAnimatorController[] animatorControllers;
     public string saveName;
     public string currentScene;
     public string charName;
+    public Role role;
     public int lvl;
     public int exp;
     public int expToNextLvl;
@@ -19,10 +21,12 @@ public class PlayerData : ScriptableObject {
     public Money purse;
     public Item[] inventory;
 
-    public void loadData(PlayerSaveData data) {
+    public void LoadData(PlayerSaveData data) {
         saveName = data.saveName;
         currentScene = data.currentScene;
         charName = data.charName;
+        role = data.role;
+        ChooseAnimator();
         lvl = data.lvl;
         exp = data.exp;
         expToNextLvl = data.expToNextLvl;
@@ -31,5 +35,38 @@ public class PlayerData : ScriptableObject {
         skillProfs = data.skillProfs;
         weaponProfs = data.weaponProfs;
         purse = data.purse;
+    }
+
+    private void ChooseAnimator() {
+        switch (role) {
+            case Role.babarian:
+                animatorController = animatorControllers[0];
+                break;
+            case Role.druid:
+                animatorController = animatorControllers[1];
+                break;
+            case Role.fighter:
+                animatorController = animatorControllers[2];
+                break;
+            case Role.priest:
+                animatorController = animatorControllers[3];
+                break;
+        }
+    }
+
+
+    public void NewCharacter(Role newRole, string saveName) {
+        this.saveName = saveName;
+        charName = newRole.ToString();
+        role = newRole;
+        ChooseAnimator();
+        lvl = 1;
+        exp = 0;
+        expToNextLvl = 300;
+        abilityScores = new AbilityValues();
+        saveProfs = new List<Abilities>();
+        skillProfs = new List<Skills>();
+        weaponProfs = new List<WeaponType>();
+        purse = new Money();
     }
 }

@@ -319,38 +319,14 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1151177421}
-        m_MethodName: SetScene
+        m_MethodName: NewGame
         m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: TownHub
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1151177421}
-        m_MethodName: SetAnimator
-        m_Mode: 2
-        m_Arguments:
-          m_ObjectArgument: {fileID: 9100000, guid: 5a98c0694fc73614c9801625f61ba0a5,
-            type: 2}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.RuntimeAnimatorController,
-            UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1151177421}
-        m_MethodName: PlayGame
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: barbarian
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &15888587
@@ -2233,7 +2209,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1707994599}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.25074396}
   m_AnchorMax: {x: 0, y: 0.25074396}
@@ -2253,11 +2229,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Navigation:
-    m_Mode: 3
-    m_SelectOnUp: {fileID: 0}
-    m_SelectOnDown: {fileID: 0}
+    m_Mode: 4
+    m_SelectOnUp: {fileID: 15888586}
+    m_SelectOnDown: {fileID: 821373284}
     m_SelectOnLeft: {fileID: 0}
-    m_SelectOnRight: {fileID: 0}
+    m_SelectOnRight: {fileID: 1995281172}
   m_Transition: 2
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
@@ -2284,38 +2260,14 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1151177421}
-        m_MethodName: SetScene
+        m_MethodName: NewGame
         m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: TownHub
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1151177421}
-        m_MethodName: SetAnimator
-        m_Mode: 2
-        m_Arguments:
-          m_ObjectArgument: {fileID: 9100000, guid: 286273c4061939a4a9346f2dca47dd63,
-            type: 2}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.RuntimeAnimatorController,
-            UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1151177421}
-        m_MethodName: PlayGame
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: druid
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &943621244
@@ -2630,11 +2582,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerData: {fileID: 11400000, guid: 1ff804ef1466c3642b1768937b95c2ef, type: 2}
-  sceneToLoad: TownHub
+  initialScene: TownHub
   buttonPrefab: {fileID: 4806214097540976595, guid: 697775f6c8301b74987296ea2da32bf5,
     type: 3}
   buttonParent: {fileID: 1205164170}
   buttonLoadGame: {fileID: 454857155}
+  largestSaveNumber: 0
 --- !u!1 &1155489965
 GameObject:
   m_ObjectHideFlags: 0
@@ -2897,7 +2850,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1707994599}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -2948,38 +2901,14 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1151177421}
-        m_MethodName: SetScene
+        m_MethodName: NewGame
         m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: TownHub
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1151177421}
-        m_MethodName: SetAnimator
-        m_Mode: 2
-        m_Arguments:
-          m_ObjectArgument: {fileID: 9100000, guid: cd9a5580d840e774799afe4560c32182,
-            type: 2}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.RuntimeAnimatorController,
-            UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1151177421}
-        m_MethodName: PlayGame
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: fighter
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1440207620
@@ -3530,7 +3459,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1707994599
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3544,8 +3473,8 @@ RectTransform:
   m_Children:
   - {fileID: 1635991100}
   - {fileID: 15888585}
-  - {fileID: 1440207618}
   - {fileID: 943621242}
+  - {fileID: 1440207618}
   - {fileID: 1995281171}
   - {fileID: 821373283}
   m_Father: {fileID: 1745108368}
@@ -3619,7 +3548,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1795565824
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3695,10 +3624,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Navigation:
-    m_Mode: 3
-    m_SelectOnUp: {fileID: 0}
-    m_SelectOnDown: {fileID: 0}
-    m_SelectOnLeft: {fileID: 0}
+    m_Mode: 4
+    m_SelectOnUp: {fileID: 1440207619}
+    m_SelectOnDown: {fileID: 821373284}
+    m_SelectOnLeft: {fileID: 943621243}
     m_SelectOnRight: {fileID: 0}
   m_Transition: 2
   m_Colors:
@@ -3726,38 +3655,14 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1151177421}
-        m_MethodName: SetScene
+        m_MethodName: NewGame
         m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: TownHub
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1151177421}
-        m_MethodName: SetAnimator
-        m_Mode: 2
-        m_Arguments:
-          m_ObjectArgument: {fileID: 9100000, guid: ffae1cf7bd46dcd4987cee790a743d78,
-            type: 2}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.RuntimeAnimatorController,
-            UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1151177421}
-        m_MethodName: PlayGame
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: priest
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1995281173
