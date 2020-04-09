@@ -39,7 +39,7 @@ public class PlayerControllerTown : PlayerController {
         }
     }
     new void MoveCharacter() {
-        myRigidBody.MovePosition(myRigidBody.position + deltaPosition * moveSpeed * Time.fixedDeltaTime);
+        playerRigidBody.MovePosition(playerRigidBody.position + deltaPosition * moveSpeed * Time.fixedDeltaTime);
     }
 
     private IEnumerator WaitForIdle() {

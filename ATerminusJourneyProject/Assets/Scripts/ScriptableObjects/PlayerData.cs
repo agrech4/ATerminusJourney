@@ -19,6 +19,7 @@ public class PlayerData : ScriptableObject {
     public List<Skills> skillProfs;
     public List<WeaponType> weaponProfs;
     public Money purse;
+    public Vector2 newScenePos;
 
     public void LoadPlayerData(PlayerSaveData data) {
         saveName = data.saveName;

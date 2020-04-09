@@ -5,10 +5,10 @@ using UnityEngine.SceneManagement;
 using UnityEngine.Tilemaps;
 
 
-public class PlayerControllerOverworld : PlayerController {
+public class PlayerControllerEncounter : PlayerController {
 
-    public float gridScaleX = 2f;
-    public float gridScaleY = 1.732051f;
+    public float gridScaleX = 1.75f;
+    public float gridScaleY = 1.75f;
     public float gridMoveWait = .1f;
     private bool gridCanMove = true;
     public Tilemap tilemap;
@@ -16,7 +16,7 @@ public class PlayerControllerOverworld : PlayerController {
     // Start is called before the first frame update
     new void Start() {
         base.Start();
-        animator.SetBool("onOverworld", true);
+        animator.SetBool("onEncounter", true);
     }
 
     new void Update() {
@@ -31,11 +31,9 @@ public class PlayerControllerOverworld : PlayerController {
     bool MoveCharacterGrid() {
         deltaPosition.x = (int)System.Math.Round(deltaPosition.x, 0);
         deltaPosition.y = (int)System.Math.Round(deltaPosition.y, 0);
-        deltaPosition.x *= System.Math.Abs(deltaPosition.y);
-        deltaPosition.y -= deltaPosition.y * .5f * System.Math.Abs(deltaPosition.x);
-        deltaPosition.x *= gridScaleX * .75f;
+        deltaPosition.x *= gridScaleX;
         deltaPosition.y *= gridScaleY;
-        Vector3Int tile = tilemap.WorldToCell(myRigidBody.position + deltaPosition);
+        Vector3Int tile = tilemap.WorldToCell(playerRigidBody.position + deltaPosition);
         bool moved = false;
         if (!tilemap.HasTile(tile) && deltaPosition != Vector2.zero) {
             MoveCharacter();
@@ -49,4 +47,5 @@ public class PlayerControllerOverworld : PlayerController {
         yield return new WaitForSeconds(gridMoveWait);
         gridCanMove = true;
     }
+
 }

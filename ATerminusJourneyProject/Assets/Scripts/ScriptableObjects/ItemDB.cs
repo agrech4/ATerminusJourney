@@ -11,7 +11,10 @@ public class ItemDB : ScriptableObject, ISerializationCallbackReceiver {
     public void OnAfterDeserialize() {
         itemDic = new Dictionary<int, Item>();
         foreach (Item item in items) {
-            itemDic.Add(item.itemID, item);
+            if (!itemDic.ContainsKey(item.itemID)) {
+                itemDic.Add(item.itemID, item);
+                Debug.Log("Added " + item.itemName + " to the dictionary");
+            }
         }
     }
 

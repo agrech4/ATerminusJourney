@@ -11,7 +11,7 @@ public enum PlayerState {
 
 public class PlayerController : MonoBehaviour {
 
-    protected Rigidbody2D myRigidBody;
+    protected Rigidbody2D playerRigidBody;
     protected Vector2 deltaPosition;
     protected Animator animator;
     public PlayerData playerData;
@@ -19,10 +19,14 @@ public class PlayerController : MonoBehaviour {
 
     // Start is called before the first frame update
     protected virtual void Start() {
-        myRigidBody = GetComponent<Rigidbody2D>();
+        playerRigidBody = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
         animator.runtimeAnimatorController = playerData.animatorController;
         playerState = PlayerState.moving;
+        if (playerData.newScenePos != Vector2.zero) {
+            playerRigidBody.MovePosition(playerData.newScenePos);
+            playerData.newScenePos = Vector2.zero;
+        }
     }
 
     // Update is called once per frame
@@ -35,7 +39,7 @@ public class PlayerController : MonoBehaviour {
     }
 
     public virtual void MoveCharacter() {
-        myRigidBody.MovePosition(myRigidBody.position + deltaPosition);
+        playerRigidBody.MovePosition(playerRigidBody.position + deltaPosition);
     }
 
 }

@@ -8,6 +8,7 @@ public class SceneTransition : MonoBehaviour {
     public string sceneToLoad;
     public PlayerController player;
     public PlayerData playerData;
+    public Vector2 moveToPos;
     private bool playerInRange;
 
     // Start is called before the first frame update
@@ -30,6 +31,7 @@ public class SceneTransition : MonoBehaviour {
     private void LoadScene() {
         playerData.currentScene = sceneToLoad;
         SceneManager.LoadScene(sceneToLoad);
+        playerData.newScenePos = moveToPos;
     }
 
 

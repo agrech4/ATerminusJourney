@@ -13,6 +13,13 @@ MonoBehaviour:
   m_Name: PlayerInventory
   m_EditorClassIdentifier: 
   itemList:
-  - item: {fileID: 11400000, guid: 388982839b74b6243addfe6ea57f7f9e, type: 2}
+  - itemID: 0
+    item: {fileID: 11400000, guid: 388982839b74b6243addfe6ea57f7f9e, type: 2}
+    amount: 1
+  - itemID: 1
+    item: {fileID: 0}
+    amount: 1
+  - itemID: 0
+    item: {fileID: 11400000, guid: 388982839b74b6243addfe6ea57f7f9e, type: 2}
     amount: 1
   itemDB: {fileID: 11400000, guid: b8702a389e3007a44af4c2570e10e751, type: 2}
