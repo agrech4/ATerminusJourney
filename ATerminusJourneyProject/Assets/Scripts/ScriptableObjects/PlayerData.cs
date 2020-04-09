@@ -1,4 +1,4 @@
-﻿using System.Collections;
+﻿using System;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -19,9 +19,8 @@ public class PlayerData : ScriptableObject {
     public List<Skills> skillProfs;
     public List<WeaponType> weaponProfs;
     public Money purse;
-    public Item[] inventory;
 
-    public void LoadData(PlayerSaveData data) {
+    public void LoadPlayerData(PlayerSaveData data) {
         saveName = data.saveName;
         currentScene = data.currentScene;
         charName = data.charName;
@@ -39,7 +38,7 @@ public class PlayerData : ScriptableObject {
 
     private void ChooseAnimator() {
         switch (role) {
-            case Role.babarian:
+            case Role.barbarian:
                 animatorController = animatorControllers[0];
                 break;
             case Role.druid:
@@ -55,26 +54,18 @@ public class PlayerData : ScriptableObject {
     }
 
 
-    public void NewCharacter(string newRole, int saveNum) {
-        switch (newRole) {
-            case "barbarian":
-            default:
-                role = Role.babarian;
-                break;
-            case "druid":
-                role = Role.druid;
-                break;
-            case "fighter":
-                role = Role.fighter;
-                break;
-            case "priest":
-                role = Role.priest;
-                break;
+    public void SetRoleFromString(string newRole) {
+        if (!Enum.TryParse(newRole, out role)) {
+            role = Role.barbarian;
         }
+    }
+
+    public void NewCharacterData(string newRole, int saveNum) {
+        SetRoleFromString(newRole);
         ChooseAnimator();
         saveName = "Save" + saveNum.ToString("000");
         currentScene = "TownHub";
-        charName = newRole.ToString();
+        charName = char.ToUpper(newRole.ToString()[0]) + newRole.ToString().Substring(1);
         lvl = 1;
         exp = 0;
         expToNextLvl = 300;

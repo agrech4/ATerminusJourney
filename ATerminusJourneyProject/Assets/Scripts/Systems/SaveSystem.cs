@@ -8,12 +8,12 @@ using UnityEngine;
 public static class SaveSystem
 {
 
-    static string directory = Application.persistentDataPath + "/Saves/";
-    static string fileExtension = ".json";
-    static string rgxFileName = @"^[sS]ave\d+.[jJ][sS][oO][nN]$";
+    static readonly string directory = Application.persistentDataPath + "/Saves/";
+    static readonly string fileExtension = ".json";
+    static readonly string rgxFileName = @"^[sS]ave\d+.[jJ][sS][oO][nN]$";
 
-    public static void SaveGame(PlayerData data) {
-        PlayerSaveData dataToStore = new PlayerSaveData(data);
+    public static void SaveGame(PlayerData data, Inventory inventory) {
+        PlayerSaveData dataToStore = new PlayerSaveData(data, inventory);
         string path = directory + dataToStore.saveName + fileExtension;
         if (!Directory.Exists(directory)) {
             Directory.CreateDirectory(directory);
@@ -23,9 +23,9 @@ public static class SaveSystem
         using (FileStream fs = File.Create(path)) {
             cereal.WriteObject(fs, dataToStore);
             //formatter.Serialize(fs, dataToStore);
-            Debug.Log("Game Saved.");
         }
-        
+        Debug.Log("Game Saved.");
+
     }
 
     public static PlayerSaveData LoadGame(string path) {

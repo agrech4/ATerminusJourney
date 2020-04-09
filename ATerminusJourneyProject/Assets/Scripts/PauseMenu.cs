@@ -16,11 +16,6 @@ public class PauseMenu : MonoBehaviour {
     public List<GameObject> transitions;
     public List<ScriptableObject> toSave;
 
-    // Start is called before the first frame update
-    void Start() {
-
-    }
-
     // Update is called once per frame
     void Update() {
         if (Input.GetButtonDown("Cancel")) {
@@ -42,12 +37,8 @@ public class PauseMenu : MonoBehaviour {
         SceneManager.LoadScene("MainMenu");
     }
 
-    public void LoadGame() {
-
-    }
-
     public void SaveGame() {
-        SaveSystem.SaveGame(toSave[0] as PlayerData);
+        SaveSystem.SaveGame(toSave[0] as PlayerData, toSave[1] as Inventory);
         //string dir = Application.persistentDataPath;
         //string fileName = @"Save";
         //string fileExtension = @".json";

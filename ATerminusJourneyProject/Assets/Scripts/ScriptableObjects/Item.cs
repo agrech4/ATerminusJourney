@@ -6,14 +6,18 @@ public enum ItemType {
     weapon,
     hat,
     armor,
+    consumable,
 }
 
 
-public abstract class Item : ScriptableObject
-{
+public abstract class Item : ScriptableObject {
 
-    public string itemName;
+    public int itemID;
+    public GameObject prefab;
     public ItemType itemType;
+    public string itemName;
+    [TextArea(15,20)]
+    public string description;
     public bool needsAttunement;
     public Money value;
     public float weight;

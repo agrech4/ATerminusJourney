@@ -17,9 +17,10 @@ public class PlayerSaveData {
     public List<Skills> skillProfs;
     public List<WeaponType> weaponProfs;
     public Money purse;
-    public string[] inventory;
+    public List<(int id, int amount)> items = new List<(int, int)>();
 
-    public PlayerSaveData(PlayerData data) {
+    public PlayerSaveData(PlayerData data, Inventory inventory) {
+        //PlayerData info
         saveName = data.saveName;
         currentScene = data.currentScene;
         charName = data.charName;
@@ -32,9 +33,10 @@ public class PlayerSaveData {
         skillProfs = data.skillProfs;
         weaponProfs = data.weaponProfs;
         purse = data.purse;
-        inventory = new string[data.inventory.Length];
-        for (int i = 0; i < inventory.Length; i++) {
-            inventory[i] = data.inventory[i].itemName;
+
+        //Inventory info
+        foreach (InventorySlot itemSlot in inventory.itemList) {
+            items.Add((itemSlot.itemID, itemSlot.amount));
         }
     }
 }

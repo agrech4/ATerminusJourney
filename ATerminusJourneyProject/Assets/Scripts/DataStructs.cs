@@ -12,7 +12,7 @@ public enum Abilities {
 }
 
 public enum Role {
-    babarian,
+    barbarian,
     druid,
     fighter,
     priest,

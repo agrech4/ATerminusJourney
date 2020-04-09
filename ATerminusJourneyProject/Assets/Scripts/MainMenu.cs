@@ -9,6 +9,7 @@ using UnityEngine.UI;
 public class MainMenu : MonoBehaviour {
 
     public PlayerData playerData;
+    public Inventory inventory;
     public string initialScene;
     public GameObject buttonPrefab;
     public GameObject buttonParent;
@@ -41,7 +42,9 @@ public class MainMenu : MonoBehaviour {
     }
 
     public void LoadGameFromPath(string path) {
-        playerData.LoadData(SaveSystem.LoadGame(path));
+        PlayerSaveData saveData = SaveSystem.LoadGame(path);
+        playerData.LoadPlayerData(saveData);
+        inventory.LoadInventory(saveData);
         SceneManager.LoadScene(playerData.currentScene);
     }
 
@@ -51,7 +54,8 @@ public class MainMenu : MonoBehaviour {
     }
 
     public void NewGame(string newRole) {
-        playerData.NewCharacter(newRole, largestSaveNumber + 1);
+        playerData.NewCharacterData(newRole, largestSaveNumber + 1);
+        inventory.NewInventory();
         SceneManager.LoadScene(initialScene.ToString());
     }
 
