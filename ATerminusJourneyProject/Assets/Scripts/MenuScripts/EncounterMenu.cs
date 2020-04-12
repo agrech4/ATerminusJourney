@@ -1,7 +1,5 @@
 ﻿using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
 using UnityEngine.EventSystems;
 using TMPro;
 
@@ -13,12 +11,13 @@ public class EncounterMenu : MonoBehaviour {
     public GameObject selectedButton;
     public PlayerController player;
     public GameObject pauseMenu;
+    public GameObject encounterMenu;
     private bool activeMenu = false;
 
 
 
     // Start is called before the first frame update
-    void Start() {
+    void Start() { 
         playerName.text = playerData.charName;
     }
 
@@ -42,7 +41,19 @@ public class EncounterMenu : MonoBehaviour {
         if (!activeMenu) {
             selectedButton = EventSystem.current.currentSelectedGameObject;
             EventSystem.current.SetSelectedGameObject(null);
+        } else {
+            StartCoroutine(WaitForActiveMenu());
         }
         player.playerState = activeMenu ? PlayerState.inMenu : PlayerState.moving;
+    }
+
+    private IEnumerator WaitForActiveMenu() {
+        yield return new WaitUntil(() => encounterMenu.activeInHierarchy);
+        SetActiveButton();
+    }
+
+    public void Movement() {
+        ((PlayerControllerEncounter)player).SetMovableTiles(playerData.MovementInTiles());
+        ToggleMenu();
     }
 }

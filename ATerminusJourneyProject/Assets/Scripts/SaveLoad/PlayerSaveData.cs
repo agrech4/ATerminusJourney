@@ -16,6 +16,7 @@ public class PlayerSaveData {
     public List<Abilities> saveProfs;
     public List<Skills> skillProfs;
     public List<WeaponType> weaponProfs;
+    public int speed;
     public Money purse;
     public List<(int id, int amount)> items = new List<(int, int)>();
 
@@ -32,6 +33,7 @@ public class PlayerSaveData {
         saveProfs = data.saveProfs;
         skillProfs = data.skillProfs;
         weaponProfs = data.weaponProfs;
+        speed = data.speed;
         purse = data.purse;
 
         //Inventory info

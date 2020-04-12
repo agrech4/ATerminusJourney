@@ -9,7 +9,7 @@ public class Inventory : ScriptableObject, ISerializationCallbackReceiver
     public ItemDB itemDB;
     
     public void LoadInventory(PlayerSaveData saveData) {
-        itemList = new List<InventorySlot>();
+        itemList.Clear();
         for (int i = 0; i < saveData.items.Count; i++) {
             Item item = itemDB.GetItem(saveData.items[i].id);
             InventorySlot itemSlot = new InventorySlot(saveData.items[i].id, item, saveData.items[i].amount);
@@ -18,7 +18,7 @@ public class Inventory : ScriptableObject, ISerializationCallbackReceiver
     }
 
     public void NewInventory() {
-        itemList = new List<InventorySlot>();
+        itemList.Clear();
     }
 
     public void AddItem(int _itemID, int _amount) {

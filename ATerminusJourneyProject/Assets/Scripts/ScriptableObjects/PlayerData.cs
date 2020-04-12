@@ -5,6 +5,7 @@ using UnityEngine;
 [CreateAssetMenu]
 public class PlayerData : ScriptableObject {
 
+    //Any modifications here must be reflected in the SaveData
     public RuntimeAnimatorController animatorController;
     public RuntimeAnimatorController[] animatorControllers;
     public string saveName;
@@ -18,6 +19,7 @@ public class PlayerData : ScriptableObject {
     public List<Abilities> saveProfs;
     public List<Skills> skillProfs;
     public List<WeaponType> weaponProfs;
+    public int speed;
     public Money purse;
     public Vector2 newScenePos;
 
@@ -34,6 +36,7 @@ public class PlayerData : ScriptableObject {
         saveProfs = data.saveProfs;
         skillProfs = data.skillProfs;
         weaponProfs = data.weaponProfs;
+        speed = data.speed;
         purse = data.purse;
     }
 
@@ -75,5 +78,36 @@ public class PlayerData : ScriptableObject {
         skillProfs = new List<Skills>();
         weaponProfs = new List<WeaponType>();
         purse = new Money();
+    }
+
+    public int GetModifier(Abilities ability) {
+        int abilityScore = 0;
+        switch (ability) {
+            case Abilities.strength:
+                abilityScore = abilityScores.Strength;
+                break;
+            case Abilities.dexterity:
+                abilityScore = abilityScores.Dexterity;
+                break;
+            case Abilities.constitution:
+                abilityScore = abilityScores.Constitution;
+                break;
+            case Abilities.intelligence:
+                abilityScore = abilityScores.Intelligence;
+                break;
+            case Abilities.wisdom:
+                abilityScore = abilityScores.Wisdom;
+                break;
+            case Abilities.charisma:
+                abilityScore = abilityScores.Charisma;
+                break;
+            default:
+                break;
+        }
+        return (int)(abilityScore - 10) / 2;
+    }
+
+    public int MovementInTiles() {
+        return speed / 5;
     }
 }

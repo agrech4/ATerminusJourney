@@ -35,6 +35,7 @@ MonoBehaviour:
   saveProfs: 
   skillProfs: 
   weaponProfs: 
+  speed: 30
   purse:
     cp: 0
     sp: 0

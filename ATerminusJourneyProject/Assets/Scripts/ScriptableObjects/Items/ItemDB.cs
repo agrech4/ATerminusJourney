@@ -13,7 +13,6 @@ public class ItemDB : ScriptableObject, ISerializationCallbackReceiver {
         foreach (Item item in items) {
             if (!itemDic.ContainsKey(item.itemID)) {
                 itemDic.Add(item.itemID, item);
-                Debug.Log("Added " + item.itemName + " to the dictionary");
             }
         }
     }
