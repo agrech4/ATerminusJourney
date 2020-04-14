@@ -30,7 +30,8 @@ public class SceneTransition : MonoBehaviour {
 
     private void LoadScene() {
         playerData.currentScene = sceneToLoad;
-        SceneManager.LoadScene(sceneToLoad);
+        SceneManager.LoadSceneAsync(sceneToLoad);
+        //SceneManager.LoadScene(sceneToLoad);
         playerData.newScenePos = moveToPos;
     }
 

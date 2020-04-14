@@ -1938,7 +1938,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -125, y: 0}
+  m_AnchoredPosition: {x: -125.00003, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &781500914
@@ -2758,7 +2758,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerData: {fileID: 11400000, guid: 1ff804ef1466c3642b1768937b95c2ef, type: 2}
-  inventory: {fileID: 0}
+  inventory: {fileID: 11400000, guid: 631bff7eb0da6ba4aae04c2f6cee17be, type: 2}
   initialScene: TownHub
   buttonPrefab: {fileID: 4806214097540976595, guid: 697775f6c8301b74987296ea2da32bf5,
     type: 3}

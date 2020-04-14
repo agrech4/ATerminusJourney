@@ -17,17 +17,20 @@ public class PlayerController : MonoBehaviour {
     public PlayerData playerData;
     public PlayerState playerState;
 
-    // Start is called before the first frame update
-    protected virtual void Start() {
+    protected virtual void Awake() {
         playerRigidBody = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
         animator.runtimeAnimatorController = playerData.animatorController;
         playerState = PlayerState.moving;
         if (playerData.newScenePos != Vector2.zero) {
-            playerRigidBody.MovePosition(playerData.newScenePos);
+            transform.position = new Vector3(playerData.newScenePos.x, playerData.newScenePos.y, 0);
             playerData.newScenePos = Vector2.zero;
         }
     }
+
+    // Start is called before the first frame update
+    protected virtual void Start() {
+    }   
 
     // Update is called once per frame
     protected virtual void Update() {
