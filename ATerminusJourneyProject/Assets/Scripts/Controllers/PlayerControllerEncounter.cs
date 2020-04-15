@@ -13,9 +13,15 @@ public class PlayerControllerEncounter : PlayerController {
     public Tilemap boundsMap;
     public Tilemap movementOverlay;
     public TileBase tileBase;
+    //public EncounterMenu encounterMenu;
     
     private bool gridCanMove = true;
     private readonly List<(Vector3Int tile, int dist)> movableTiles = new List<(Vector3Int tile, int dist)>();
+
+    new void Awake() {
+        base.Awake();
+        playerState = PlayerState.waiting;
+    }
 
     // Start is called before the first frame update
     new void Start() {
@@ -25,11 +31,11 @@ public class PlayerControllerEncounter : PlayerController {
 
     new void Update() {
         base.Update();
-        if (gridCanMove) {
+        if (gridCanMove && playerState == PlayerState.moving) {
             if (MoveCharacterGrid()) {
                 StartCoroutine(WaitForGridMove());
             }
-        }
+        } 
     }
 
     bool MoveCharacterGrid() {
@@ -62,10 +68,10 @@ public class PlayerControllerEncounter : PlayerController {
 
     public void SetMovableTiles(int maxDist) {
         movableTiles.Clear();
-        movementOverlay.ClearAllTiles();
-        Vector3Int startTile = boundsMap.WorldToCell(playerRigidBody.position);
+        if (maxDist <= 0) return;
         Queue<Vector3Int> tempTiles = new Queue<Vector3Int>();
         Queue<int> tempDists = new Queue<int>();
+        Vector3Int startTile = boundsMap.WorldToCell(transform.position);
         tempTiles.Enqueue(startTile);
         tempDists.Enqueue(0);
         while (tempTiles.Count > 0) {
@@ -96,8 +102,22 @@ public class PlayerControllerEncounter : PlayerController {
                 }
             }
         }
-        foreach ((Vector3Int tile, int dist) in movableTiles) {
+    } 
+
+    public void DisplayMovableTiles() {
+        movementOverlay.ClearAllTiles();
+        foreach ((Vector3Int tile, _) in movableTiles) {
             movementOverlay.SetTile(tile, tileBase);
         }
-    } 
+    }
+
+    public void ResetMovableTiles() {
+        movableTiles.Clear();
+        movementOverlay.ClearAllTiles();
+    }
+
+    public int GetDistMoved() {
+        Vector3Int tile = boundsMap.WorldToCell(transform.position);
+        return movableTiles.Find(_ => _.tile == tile).dist;
+    }
 }

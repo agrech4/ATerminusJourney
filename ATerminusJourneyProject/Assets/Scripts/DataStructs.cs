@@ -11,11 +11,21 @@ public enum Abilities {
     charisma,
 }
 
-public enum Role {
-    barbarian,
-    druid,
-    fighter,
-    priest,
+public enum Conditions {
+    blinded,
+    charmed,
+    deafened,
+    fatigued,
+    grappled,
+    incapacitated,
+    invisible,
+    paralyzed,
+    petrified,
+    poisoned,
+    prone,
+    restrained,
+    stunned,
+    unconscious,
 }
 
 public enum DamageType {
@@ -34,13 +44,14 @@ public enum DamageType {
     lightning,
 }
 
+public enum Role {
+    barbarian,
+    druid,
+    fighter,
+    priest,
+}
+
 public enum Skills {
-    strSave,
-    dexSave,
-    conSave,
-    intSave,
-    wisSave,
-    charSave,
     athletics,
     acrobatics,
     sleightOfHand,

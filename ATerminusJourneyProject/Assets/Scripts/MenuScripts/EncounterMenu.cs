@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using UnityEngine;
 using UnityEngine.EventSystems;
+using UnityEngine.UI;
 using TMPro;
 
 public class EncounterMenu : MonoBehaviour {
@@ -9,24 +10,36 @@ public class EncounterMenu : MonoBehaviour {
     public PlayerData playerData;
     public TMP_Text playerName;
     public GameObject selectedButton;
-    public PlayerController player;
+    public Button movementButton;
+    public PlayerControllerEncounter player;
     public GameObject pauseMenu;
     public GameObject encounterMenu;
-    private bool activeMenu = false;
+    public GameObject movementOverlay;
+    private bool menuActive = false;
+    private bool movementActive = false;
+    private int movement;
 
 
 
     // Start is called before the first frame update
     void Start() { 
         playerName.text = playerData.charName;
+        movement = playerData.MovementInTiles();
+        if (movement <= 0) {
+            movementButton.interactable = false;
+        } else {
+            movementButton.interactable = true;
+        }
     }
 
 
 
     // Update is called once per frame
     void Update() {
-        if (Input.GetButtonDown("Menu") && !pauseMenu.activeInHierarchy) {
-            ToggleMenu();
+        if (!pauseMenu.activeInHierarchy) {
+            if (Input.GetButtonDown("Menu") || (movementActive && !menuActive && Input.GetButtonDown("Submit"))) {
+                ToggleMenu();
+            }
         }
     }
 
@@ -36,15 +49,16 @@ public class EncounterMenu : MonoBehaviour {
     }
 
     void ToggleMenu() {
-        activeMenu = !activeMenu;
-        animator.SetBool("activeMenu", activeMenu);
-        if (!activeMenu) {
+        menuActive = !menuActive;
+        animator.SetBool("activeMenu", menuActive);
+        movementOverlay.SetActive(!menuActive);
+        if (!menuActive) {
             selectedButton = EventSystem.current.currentSelectedGameObject;
             EventSystem.current.SetSelectedGameObject(null);
         } else {
             StartCoroutine(WaitForActiveMenu());
         }
-        player.playerState = activeMenu ? PlayerState.inMenu : PlayerState.moving;
+        player.playerState = menuActive ? PlayerState.inMenu : PlayerState.moving;
     }
 
     private IEnumerator WaitForActiveMenu() {
@@ -53,7 +67,35 @@ public class EncounterMenu : MonoBehaviour {
     }
 
     public void Movement() {
-        ((PlayerControllerEncounter)player).SetMovableTiles(playerData.MovementInTiles());
+        if (!movementActive) {
+            player.SetMovableTiles(movement);
+            player.DisplayMovableTiles();
+            movementActive = true;
+        }
+        StartCoroutine(ToggleMenuAtEndOfFrame());
+    }
+
+    private IEnumerator ToggleMenuAtEndOfFrame  () {
+        yield return new WaitForEndOfFrame();
         ToggleMenu();
+    }
+
+    public void ConfirmMovement() {
+        movementActive = false;
+        movement -= player.GetDistMoved();
+        if (movement <= 0) {
+            movementButton.interactable = false;
+        }
+        player.ResetMovableTiles();
+    }
+
+    public void EndTurn() {
+        if (movementActive) ConfirmMovement();
+        movement = playerData.MovementInTiles();
+        if (movement <= 0) {
+            movementButton.interactable = false;
+        } else {
+            movementButton.interactable = true;
+        }
     }
 }

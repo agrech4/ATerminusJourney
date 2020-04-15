@@ -6,7 +6,8 @@ using UnityEngine.Tilemaps;
 
 public enum PlayerState {
     moving,
-    inMenu
+    waiting,
+    inMenu,
 }
 
 public class PlayerController : MonoBehaviour {

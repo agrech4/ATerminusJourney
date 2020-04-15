@@ -19,6 +19,7 @@ public class PlayerData : ScriptableObject {
     public List<Abilities> saveProfs;
     public List<Skills> skillProfs;
     public List<WeaponType> weaponProfs;
+    public List<Conditions> conditions;
     public int speed;
     public Money purse;
     public Vector2 newScenePos;
@@ -108,6 +109,13 @@ public class PlayerData : ScriptableObject {
     }
 
     public int MovementInTiles() {
+        if (conditions.Contains(Conditions.grappled)) return 0;
+        if (conditions.Contains(Conditions.paralyzed)) return 0;
+        if (conditions.Contains(Conditions.petrified)) return 0;
+        if (conditions.Contains(Conditions.restrained)) return 0;
+        if (conditions.Contains(Conditions.stunned)) return 0;
+        if (conditions.Contains(Conditions.unconscious)) return 0;
+        if (conditions.Contains(Conditions.prone)) return speed / 10;
         return speed / 5;
     }
 }
